@@ -1,0 +1,7 @@
+.es-big-title {
+	@apply text-h1 font-display font-bold max-w-[45rem] px-side-padding py-6 desktop:pt-20 desktop:pb-0;
+}
+
+.es-blog-grid {
+	@apply flex flex-col desktop:grid desktop:grid-cols-3 auto-rows-auto gap-x-16 gap-y-10 desktop:gap-y-32 p-side-padding m-0;
+}

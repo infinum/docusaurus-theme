@@ -1,0 +1,43 @@
+.markdown {
+	@apply space-y-5;
+
+	ul {
+		@apply list-circle-fill ml-4 mr-0 my-4;
+
+		li {
+			@apply pl-2 marker:text-18;
+		}
+
+		ul {
+			@apply list-circle-hollow;
+
+			ul {
+				@apply list-square-fill;
+
+				ul {
+					@apply list-square-hollow;
+				}
+			}
+		}
+	}
+
+	a {
+		@apply text-infinum;
+	}
+
+	& > * {
+		@apply scroll-mt-16;
+	}
+
+	h2 {
+		@apply mt-12 !important;
+	}
+
+	:is(h3, h4, h5, h6) {
+		@apply mt-10 !important;
+	}
+
+	.alert {
+		@apply shadow-none rounded-sm;
+	}
+}

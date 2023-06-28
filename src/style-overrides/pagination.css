@@ -1,0 +1,7 @@
+.pagination-nav {
+	@apply flex flex-col desktop:flex-row desktop:justify-between border-t border-t-grey-200 pt-4 mb-6 desktop:mb-20;
+
+	&__link {
+		@apply border-none p-0;
+	}
+}

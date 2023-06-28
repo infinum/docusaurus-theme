@@ -1,0 +1,15 @@
+.table-of-contents {
+	@apply border-l-grey-400 pl-3 pr-0 py-0;
+
+	&__link {
+		@apply text-14 text-black py-1 px-0;
+
+		&--active {
+			@apply text-infinum;
+		}
+	}
+
+	li {
+		@apply p-0 m-0;
+	}
+}

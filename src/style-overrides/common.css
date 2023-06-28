@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--ifm-navbar-height: 6.5rem;
+}
+
+/* Docusaurus color overrides (auto-generated from Docusaurus tool) */
+:root {
+	--ifm-color-primary: var(--global-colors-infinum);
+	--ifm-color-primary-dark: #c32323;
+	--ifm-color-primary-darker: #b82121;
+	--ifm-color-primary-darkest: #981c1c;
+	--ifm-color-primary-light: #dc3e3e;
+	--ifm-color-primary-lighter: #de4949;
+	--ifm-color-primary-lightest: #e46969;
+	--ifm-code-font-size: 95%;
+	--ifm-code-background: var(--global-colors-sky70);
+}
+
+aside {
+	--doc-sidebar-width: 320px;
+}
+
+h1 {
+	@apply font-display text-h3 font-bold;
+}
+
+h2 {
+	@apply font-display text-36 font-bold;
+}
+
+h3 {
+	@apply font-display text-24 font-bold;
+}
+
+h4 {
+	@apply font-display text-18 font-bold;
+}
+
+h5 {
+	@apply font-display text-16 font-bold;
+}
+
+h6 {
+	@apply font-display text-14 font-bold;
+}
+
+li {
+	@apply text-16 font-sans;
+}
+
+blockquote {
+	@apply m-0 my-10 pl-10 pr-0 py-4 border-l-4 border-l-infinum;
+
+	p {
+		@apply font-sans text-24 font-bold text-black;
+	}
+}

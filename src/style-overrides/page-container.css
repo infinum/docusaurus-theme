@@ -1,0 +1,16 @@
+main {
+	.container {
+		@apply m-0 pl-32 pr-20 flex flex-nowrap justify-between gap-10;
+		@apply py-10 !important;
+
+		> .row {
+			> .col--3 {
+				@apply flex-auto;
+			}
+		}
+
+		article {
+			@apply max-w-2xl;
+		}
+	}
+}

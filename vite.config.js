@@ -13,9 +13,9 @@ export default defineConfig({
 	build: {
 		lib: {
 			entry: resolve('src', 'components/index.js'),
-			name: 'ReactViteLibrary',
+			name: 'InfinumDocusaurusTheme',
 			formats: ['es'],
-			fileName: () => `infinum-docusaurus-theme.js`,
+			fileName: () => 'infinum-docusaurus-theme.js',
 		},
 		manifest: true,
 		rollupOptions: {

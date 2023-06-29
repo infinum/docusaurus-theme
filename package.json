@@ -1,10 +1,9 @@
 {
 	"name": "@infinum/docusaurus-theme",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "A collection of components and style overrides for Docusaurus pages in Infinum's open-source projects",
 	"private": true,
 	"type": "module",
-	"exports": "./dist/infinum-docusaurus-theme.js",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",

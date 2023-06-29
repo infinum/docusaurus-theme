@@ -1,0 +1,134 @@
+.blog-tags-post-list-page,
+.blog-list-page {
+	.navbar {
+		@apply bg-white;
+	}
+
+	.main-wrapper {
+		.container {
+			/* @apply m-0 p-0 w-full max-w-full !important; */
+			@apply p-side-padding m-0 w-full max-w-full !important;
+
+			> .row {
+				@apply w-full m-0 p-0 block;
+
+				> main {
+					@apply block p-0 m-0 w-full max-w-full;
+
+					.pagination-nav {
+						@apply col-start-1 col-span-3
+					}
+
+					article {
+						@apply flex flex-col;
+						@apply m-0 p-0 !important;
+
+						h2 {
+							@apply text-24 font-bold font-sans;
+
+							+ div {
+								@apply text-black font-sans text-12 uppercase;
+								@apply mt-1 mb-3 !important;
+
+								/* Hide authors */
+								+ div {
+									@apply hidden;
+								}
+							}
+						}
+
+						.markdown {
+							@apply space-y-4;
+
+							> :is(h1, h2, h3, h4, h5, h6, p) {
+								@apply text-14 font-sans text-black font-normal p-0 line-clamp-4;
+								@apply first:mt-0 !important;
+							}
+						}
+
+						footer {
+							@apply flex;
+							@apply p-0 m-0 mt-5 !important;
+
+							> .col {
+								@apply p-0;
+
+								&.text--right {
+									@apply hidden;
+								}
+
+								> b {
+									@apply hidden;
+								}
+
+								> ul {
+									@apply flex flex-wrap gap-x-2 gap-y-0.5 list-none;
+									@apply m-0 p-0 !important;
+
+									li {
+										@apply p-0 m-0;
+
+										a {
+											@apply bg-grey-300 hover:bg-grey-400 text-white rounded-full border-none text-12 font-medium uppercase transition-colors;
+											@apply px-2 py-0.5 m-0 !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Blog-specific */
+.blog-tags-post-list-page {
+	.main-wrapper {
+		> .container {
+			> .row {
+				@apply m-0 w-full desktop:grid desktop:grid-cols-10;
+
+				> .col {
+					@apply p-0 m-0;
+
+					&.col--3 {
+						@apply desktop:col-start-1 desktop:col-span-2;
+						@apply w-full max-w-full !important;
+					}
+
+					&.col--7 {
+						@apply flex flex-col desktop:grid desktop:grid-cols-3 desktop:col-start-3 desktop:col-span-8 gap-x-16 gap-y-10 desktop:gap-y-32;
+						@apply w-full max-w-full !important;
+
+						> header {
+							@apply col-start-1 col-span-3;
+							@apply m-0 desktop:-mb-20 p-0 !important;
+						}
+
+					}
+				}
+
+
+			}
+		}
+	}
+}
+
+/* Tag-specific */
+section[class*='DocCategoryGeneratedIndexPage'] {
+	@apply flex flex-col gap-5;
+	@apply m-0 p-0 !important;
+
+	article {
+		&.col {
+			@apply p-0 m-0 !important;
+		}
+
+		.card {
+			@apply flex flex-col gap-2 shadow-none rounded-md border border-grey-200 hover:text-infinum transition-colors;
+			@apply p-4 !important;
+		}
+	}
+}

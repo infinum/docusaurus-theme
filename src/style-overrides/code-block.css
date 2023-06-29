@@ -1,0 +1,15 @@
+code:not(.prism-code code) {
+	@apply bg-sky-70 text-white border-none rounded-none px-1 py-0.5 font-mono text-16 font-medium;
+}
+
+.prism-code {
+	@apply bg-sky-70 border-none rounded-none font-mono text-16 font-medium;
+}
+
+.theme-code-block {
+	@apply bg-sky-70 rounded-none shadow-none;
+
+	> div[class^='codeBlockTitle'] {
+		@apply bg-grey-200 text-grey-500 rounded-none text-12 font-sans font-normal px-2.5 py-1;
+	}
+}

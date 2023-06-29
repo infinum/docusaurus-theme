@@ -1,0 +1,32 @@
+.navbar {
+	@apply shadow-none h-[6.25rem] px-side-padding py-0 bg-grey-100;
+
+	&__brand {
+		@apply pt-1;
+	}
+
+	&__logo {
+		@apply max-h-6 max-w-[14.5rem] desktop:max-w-full;
+	}
+
+	&__items {
+		@apply gap-4;
+
+		&--right {
+			@apply gap-8;
+		}
+	}
+
+	&__link {
+		@apply items-center h-full py-0 px-2 text-16 border-t-4 border-t-transparent desktop:flex font-normal;
+
+		&--active {
+			@apply text-current border-t-infinum;
+		}
+	}
+
+	&__link svg,
+	&__title {
+		@apply hidden;
+	}
+}

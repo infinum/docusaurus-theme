@@ -1,0 +1,26 @@
+main[class*='docMainContainer'] {
+	> .container {
+		--ifm-container-width-xl: 100%;
+
+		@apply p-6 desktop:p-20 m-0 w-full !important;
+
+		> .row {
+			@apply w-full max-w-full !important;
+		}
+	}
+}
+
+.docs-doc-page {
+	.navbar {
+		@apply px-6 border-b border-grey-200 desktop:ml-80;
+
+		&__brand {
+			@apply desktop:hidden;
+		}
+	}
+}
+
+/* Ugly full class name to override the default Docusaurus one. */
+div.generatedIndexPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module {
+	@apply max-w-full w-full !important;
+}

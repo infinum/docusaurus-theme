@@ -5,3 +5,7 @@
 .es-blog-grid {
 	@apply flex flex-col desktop:grid desktop:grid-cols-3 auto-rows-auto gap-x-16 gap-y-10 desktop:gap-y-32 p-side-padding m-0;
 }
+
+.es-footer-white ~ .es-footer {
+	@apply bg-white !important;
+}

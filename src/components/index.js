@@ -6,7 +6,7 @@ export { FeatureShowcase } from './feature-showcase';
 export { Footer } from './footer';
 export { Hero } from './hero';
 export { IconLinkCards } from './icon-link-cards';
-export { icons } from './icons';
+export { icons, osProjectIcons } from './icons';
 export { ImageAndText } from './image-and-text';
 export { InfinumLogo } from './infinum-logo';
 export { TextCards } from './text-cards';

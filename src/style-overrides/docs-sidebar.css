@@ -54,7 +54,7 @@
 	@apply m-0 px-5 py-3 !important;
 }
 
-.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible {
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
 	@apply font-bold text-18 hover:bg-transparent;
 }
 

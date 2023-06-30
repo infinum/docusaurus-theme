@@ -12,7 +12,7 @@ main[class*='docMainContainer'] {
 
 .docs-doc-page {
 	.navbar {
-		@apply px-6 border-b border-grey-200 desktop:ml-80;
+		@apply px-6 border-b border-grey-200;
 	}
 }
 

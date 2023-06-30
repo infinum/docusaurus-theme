@@ -21,5 +21,8 @@ export default defineConfig({
 		rollupOptions: {
 			external: [...Object.keys(packageJson.peerDependencies)],
 		},
-	}
+	},
+	watch: {
+		exclude: 'node_modules/**',
+	},
 })

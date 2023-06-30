@@ -51,7 +51,7 @@
 }
 
 .menu__link--sublist {
-	@apply m-0 px-5 py-3 !important;
+	@apply m-0 px-5 py-3 hover:bg-transparent !important;
 }
 
 .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {

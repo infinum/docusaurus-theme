@@ -7,7 +7,7 @@ code:not(.prism-code code) {
 }
 
 .theme-code-block {
-	@apply bg-sky-70 rounded-none shadow-none;
+	@apply bg-sky-70 rounded-none shadow-none text-xs;
 
 	> div[class^='codeBlockTitle'] {
 		@apply bg-grey-200 text-grey-500 rounded-none text-12 font-sans font-normal px-2.5 py-1;

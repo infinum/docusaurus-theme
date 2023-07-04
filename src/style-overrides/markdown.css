@@ -40,4 +40,8 @@
 	.alert {
 		@apply shadow-none rounded-sm;
 	}
+
+	p + .theme-code-block {
+		@apply mt-2;
+	}
 }

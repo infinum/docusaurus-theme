@@ -138,4 +138,8 @@ section[class*='DocCategoryGeneratedIndexPage'] {
 	.main-wrapper > .container.margin-vert--lg {
 		@apply p-0 m-0 !important;
 	}
+
+	.es-blog-grid + .pagination-nav {
+		@apply mx-side-padding;
+	}
 }

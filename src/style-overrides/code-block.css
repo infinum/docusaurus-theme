@@ -1,7 +1,11 @@
 code:not(.prism-code code) {
-	@apply text-sky-70 font-mono border-none p-0 bg-none m-0 align-baseline font-bold;
+	@apply font-mono border-none p-0 bg-none m-0 align-baseline font-bold;
 
 	font-size: 0.95em;
+
+	.markdown & {
+		@apply text-sky-70;
+	}
 }
 
 .prism-code {

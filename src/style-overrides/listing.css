@@ -132,3 +132,10 @@ section[class*='DocCategoryGeneratedIndexPage'] {
 		}
 	}
 }
+
+/* Blog list page specific */
+.blog-list-page {
+	.main-wrapper > .container.margin-vert--lg {
+		@apply p-0 m-0 !important;
+	}
+}

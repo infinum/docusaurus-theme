@@ -15,6 +15,10 @@ code:not(.prism-code code) {
 .prism-code {
 	@apply bg-grey-100 rounded-none border-none font-mono text-14 font-medium !important;
 
+	.theme-code-block-highlighted-line {
+		@apply bg-grey-200/60 !important;
+	}
+
 	.token.boolean,
 	.token.constant,
 	.token.deleted,
@@ -31,7 +35,9 @@ code:not(.prism-code code) {
 	.token.property-access,
 	.token.plain,
 	.token.script,
-	.token.maybe-class-name {
+	.token.maybe-class-name,
+	.token.content,
+	.token.front-matter {
 		@apply text-black !important;
 	}
 

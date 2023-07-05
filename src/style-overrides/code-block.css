@@ -5,7 +5,7 @@ code:not(.prism-code code) {
 }
 
 .prism-code {
-	@apply bg-sky-70 border-none rounded-none font-mono text-16 font-medium;
+	@apply bg-sky-70 border-none rounded-none font-mono text-14 font-medium;
 }
 
 .theme-code-block {

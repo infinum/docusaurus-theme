@@ -58,3 +58,15 @@ blockquote {
 		@apply font-sans text-24 font-bold text-black;
 	}
 }
+
+.es-showcase-grid {
+	@apply mx-auto p-side-padding flex flex-col desktop:grid desktop:grid-cols-2 min-[1365px]:grid-cols-3 gap-10 desktop:gap-20 desktop:w-fit;
+}
+
+.es-text-center {
+	@apply text-center;
+}
+
+.es-h-center {
+	@apply mx-auto;
+}

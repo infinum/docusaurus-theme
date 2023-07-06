@@ -1,5 +1,13 @@
 .es-big-title {
+	@apply text-h1 font-display font-bold px-side-padding py-6 desktop:pt-20 desktop:pb-0;
+}
+
+.es-big-title-limited {
 	@apply text-h1 font-display font-bold max-w-[45rem] px-side-padding py-6 desktop:pt-20 desktop:pb-0;
+}
+
+.es-big-subtitle {
+	@apply text-16 mt-4 mb-8 max-w-prose;
 }
 
 .es-blog-grid {

@@ -12,3 +12,4 @@ export { ImageAndText } from './image-and-text';
 export { InfinumLogo } from './infinum-logo';
 export { TextCards } from './text-cards';
 export { Pagination } from './pagination';
+export { ShowcaseCard } from './showcase-card';

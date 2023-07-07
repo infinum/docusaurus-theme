@@ -2,6 +2,7 @@
 
 @import './common.css';
 @import './markdown.css';
+@import './search.css';
 @import './page-container.css';
 @import './helpers.css';
 @import './navbar.css';
@@ -13,4 +14,3 @@
 @import './code-block.css';
 @import './pagination.css';
 @import './blog.css';
-@import './search.css';

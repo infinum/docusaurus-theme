@@ -4,7 +4,7 @@
 		@apply bg-white;
 
 		.DocSearch.DocSearch-Button {
-			@apply bg-grey-100 !important;
+			@apply border border-grey-200 !important;
 		}
 	}
 

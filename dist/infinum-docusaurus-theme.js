@@ -1,5 +1,5 @@
-import S from "react";
-var Q = { exports: {} }, E = {};
+import N from "react";
+var e1 = { exports: {} }, E = {};
 /**
  * @license React
  * react-jsx-runtime.production.min.js
@@ -9,21 +9,21 @@ var Q = { exports: {} }, E = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var L1;
+var W1;
 function c0() {
-  if (L1)
+  if (W1)
     return E;
-  L1 = 1;
-  var v = S, i = Symbol.for("react.element"), s = Symbol.for("react.fragment"), h = Object.prototype.hasOwnProperty, c = v.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, f = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function u(m, x, H) {
-    var M, C = {}, W = null, N = null;
-    H !== void 0 && (W = "" + H), x.key !== void 0 && (W = "" + x.key), x.ref !== void 0 && (N = x.ref);
-    for (M in x)
-      h.call(x, M) && !f.hasOwnProperty(M) && (C[M] = x[M]);
+  W1 = 1;
+  var f = N, i = Symbol.for("react.element"), s = Symbol.for("react.fragment"), h = Object.prototype.hasOwnProperty, c = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, x = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function u(m, d, H) {
+    var M, C = {}, W = null, S = null;
+    H !== void 0 && (W = "" + H), d.key !== void 0 && (W = "" + d.key), d.ref !== void 0 && (S = d.ref);
+    for (M in d)
+      h.call(d, M) && !x.hasOwnProperty(M) && (C[M] = d[M]);
     if (m && m.defaultProps)
-      for (M in x = m.defaultProps, x)
-        C[M] === void 0 && (C[M] = x[M]);
-    return { $$typeof: i, type: m, key: W, ref: N, props: C, _owner: c.current };
+      for (M in d = m.defaultProps, d)
+        C[M] === void 0 && (C[M] = d[M]);
+    return { $$typeof: i, type: m, key: W, ref: S, props: C, _owner: c.current };
   }
   return E.Fragment = s, E.jsx = u, E.jsxs = u, E;
 }
@@ -37,17 +37,17 @@ var _ = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var W1;
+var R1;
 function d0() {
-  return W1 || (W1 = 1, {}.NODE_ENV !== "production" && function() {
-    var v = S, i = Symbol.for("react.element"), s = Symbol.for("react.portal"), h = Symbol.for("react.fragment"), c = Symbol.for("react.strict_mode"), f = Symbol.for("react.profiler"), u = Symbol.for("react.provider"), m = Symbol.for("react.context"), x = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), M = Symbol.for("react.suspense_list"), C = Symbol.for("react.memo"), W = Symbol.for("react.lazy"), N = Symbol.for("react.offscreen"), t1 = Symbol.iterator, H1 = "@@iterator";
+  return R1 || (R1 = 1, {}.NODE_ENV !== "production" && function() {
+    var f = N, i = Symbol.for("react.element"), s = Symbol.for("react.portal"), h = Symbol.for("react.fragment"), c = Symbol.for("react.strict_mode"), x = Symbol.for("react.profiler"), u = Symbol.for("react.provider"), m = Symbol.for("react.context"), d = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), M = Symbol.for("react.suspense_list"), C = Symbol.for("react.memo"), W = Symbol.for("react.lazy"), S = Symbol.for("react.offscreen"), r1 = Symbol.iterator, H1 = "@@iterator";
     function V1(t) {
       if (t === null || typeof t != "object")
         return null;
-      var r = t1 && t[t1] || t[H1];
+      var r = r1 && t[r1] || t[H1];
       return typeof r == "function" ? r : null;
     }
-    var V = v.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    var V = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function g(t) {
       {
         for (var r = arguments.length, l = new Array(r > 1 ? r - 1 : 0), o = 1; o < r; o++)
@@ -57,31 +57,31 @@ function d0() {
     }
     function y1(t, r, l) {
       {
-        var o = V.ReactDebugCurrentFrame, d = o.getStackAddendum();
-        d !== "" && (r += "%s", l = l.concat([d]));
+        var o = V.ReactDebugCurrentFrame, v = o.getStackAddendum();
+        v !== "" && (r += "%s", l = l.concat([v]));
         var p = l.map(function(a) {
           return String(a);
         });
         p.unshift("Warning: " + r), Function.prototype.apply.call(console[t], console, p);
       }
     }
-    var B1 = !1, D1 = !1, P1 = !1, A1 = !1, E1 = !1, r1;
-    r1 = Symbol.for("react.module.reference");
+    var B1 = !1, D1 = !1, P1 = !1, A1 = !1, E1 = !1, l1;
+    l1 = Symbol.for("react.module.reference");
     function _1(t) {
-      return !!(typeof t == "string" || typeof t == "function" || t === h || t === f || E1 || t === c || t === H || t === M || A1 || t === N || B1 || D1 || P1 || typeof t == "object" && t !== null && (t.$$typeof === W || t.$$typeof === C || t.$$typeof === u || t.$$typeof === m || t.$$typeof === x || // This needs to include all possible module reference object
+      return !!(typeof t == "string" || typeof t == "function" || t === h || t === x || E1 || t === c || t === H || t === M || A1 || t === S || B1 || D1 || P1 || typeof t == "object" && t !== null && (t.$$typeof === W || t.$$typeof === C || t.$$typeof === u || t.$$typeof === m || t.$$typeof === d || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      t.$$typeof === r1 || t.getModuleId !== void 0));
+      t.$$typeof === l1 || t.getModuleId !== void 0));
     }
-    function S1(t, r, l) {
+    function N1(t, r, l) {
       var o = t.displayName;
       if (o)
         return o;
-      var d = r.displayName || r.name || "";
-      return d !== "" ? l + "(" + d + ")" : l;
+      var v = r.displayName || r.name || "";
+      return v !== "" ? l + "(" + v + ")" : l;
     }
-    function l1(t) {
+    function o1(t) {
       return t.displayName || "Context";
     }
     function b(t) {
@@ -96,7 +96,7 @@ function d0() {
           return "Fragment";
         case s:
           return "Portal";
-        case f:
+        case x:
           return "Profiler";
         case c:
           return "StrictMode";
@@ -109,17 +109,17 @@ function d0() {
         switch (t.$$typeof) {
           case m:
             var r = t;
-            return l1(r) + ".Consumer";
+            return o1(r) + ".Consumer";
           case u:
             var l = t;
-            return l1(l._context) + ".Provider";
-          case x:
-            return S1(t, t.render, "ForwardRef");
+            return o1(l._context) + ".Provider";
+          case d:
+            return N1(t, t.render, "ForwardRef");
           case C:
             var o = t.displayName || null;
             return o !== null ? o : b(t.type) || "Memo";
           case W: {
-            var d = t, p = d._payload, a = d._init;
+            var v = t, p = v._payload, a = v._init;
             try {
               return b(a(p));
             } catch {
@@ -129,18 +129,18 @@ function d0() {
         }
       return null;
     }
-    var R = Object.assign, P = 0, o1, i1, s1, n1, h1, a1, c1;
-    function d1() {
+    var R = Object.assign, P = 0, i1, s1, n1, h1, a1, c1, d1;
+    function v1() {
     }
-    d1.__reactDisabledLog = !0;
-    function N1() {
+    v1.__reactDisabledLog = !0;
+    function S1() {
       {
         if (P === 0) {
-          o1 = console.log, i1 = console.info, s1 = console.warn, n1 = console.error, h1 = console.group, a1 = console.groupCollapsed, c1 = console.groupEnd;
+          i1 = console.log, s1 = console.info, n1 = console.warn, h1 = console.error, a1 = console.group, c1 = console.groupCollapsed, d1 = console.groupEnd;
           var t = {
             configurable: !0,
             enumerable: !0,
-            value: d1,
+            value: v1,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -166,52 +166,52 @@ function d0() {
           };
           Object.defineProperties(console, {
             log: R({}, t, {
-              value: o1
-            }),
-            info: R({}, t, {
               value: i1
             }),
-            warn: R({}, t, {
+            info: R({}, t, {
               value: s1
             }),
-            error: R({}, t, {
+            warn: R({}, t, {
               value: n1
             }),
-            group: R({}, t, {
+            error: R({}, t, {
               value: h1
             }),
-            groupCollapsed: R({}, t, {
+            group: R({}, t, {
               value: a1
             }),
-            groupEnd: R({}, t, {
+            groupCollapsed: R({}, t, {
               value: c1
+            }),
+            groupEnd: R({}, t, {
+              value: d1
             })
           });
         }
         P < 0 && g("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var z = V.ReactCurrentDispatcher, $;
+    var $ = V.ReactCurrentDispatcher, Y;
     function T(t, r, l) {
       {
-        if ($ === void 0)
+        if (Y === void 0)
           try {
             throw Error();
-          } catch (d) {
-            var o = d.stack.trim().match(/\n( *(at )?)/);
-            $ = o && o[1] || "";
+          } catch (v) {
+            var o = v.stack.trim().match(/\n( *(at )?)/);
+            Y = o && o[1] || "";
           }
         return `
-` + $ + t;
+` + Y + t;
       }
     }
-    var Y = !1, O;
+    var U = !1, O;
     {
       var O1 = typeof WeakMap == "function" ? WeakMap : Map;
       O = new O1();
     }
-    function v1(t, r) {
-      if (!t || Y)
+    function f1(t, r) {
+      if (!t || U)
         return "";
       {
         var l = O.get(t);
@@ -219,11 +219,11 @@ function d0() {
           return l;
       }
       var o;
-      Y = !0;
-      var d = Error.prepareStackTrace;
+      U = !0;
+      var v = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
       var p;
-      p = z.current, z.current = null, N1();
+      p = $.current, $.current = null, S1();
       try {
         if (r) {
           var a = function() {
@@ -276,13 +276,13 @@ function d0() {
             }
         }
       } finally {
-        Y = !1, z.current = p, T1(), Error.prepareStackTrace = d;
+        U = !1, $.current = p, T1(), Error.prepareStackTrace = v;
       }
-      var B = t ? t.displayName || t.name : "", b1 = B ? T(B) : "";
-      return typeof t == "function" && O.set(t, b1), b1;
+      var B = t ? t.displayName || t.name : "", L1 = B ? T(B) : "";
+      return typeof t == "function" && O.set(t, L1), L1;
     }
     function q1(t, r, l) {
-      return v1(t, !1);
+      return f1(t, !1);
     }
     function F1(t) {
       var r = t.prototype;
@@ -292,7 +292,7 @@ function d0() {
       if (t == null)
         return "";
       if (typeof t == "function")
-        return v1(t, F1(t));
+        return f1(t, F1(t));
       if (typeof t == "string")
         return T(t);
       switch (t) {
@@ -303,29 +303,29 @@ function d0() {
       }
       if (typeof t == "object")
         switch (t.$$typeof) {
-          case x:
+          case d:
             return q1(t.render);
           case C:
             return q(t.type, r, l);
           case W: {
-            var o = t, d = o._payload, p = o._init;
+            var o = t, v = o._payload, p = o._init;
             try {
-              return q(p(d), r, l);
+              return q(p(v), r, l);
             } catch {
             }
           }
         }
       return "";
     }
-    var F = Object.prototype.hasOwnProperty, f1 = {}, x1 = V.ReactDebugCurrentFrame;
+    var F = Object.prototype.hasOwnProperty, x1 = {}, p1 = V.ReactDebugCurrentFrame;
     function I(t) {
       if (t) {
         var r = t._owner, l = q(t.type, t._source, r ? r.type : null);
-        x1.setExtraStackFrame(l);
+        p1.setExtraStackFrame(l);
       } else
-        x1.setExtraStackFrame(null);
+        p1.setExtraStackFrame(null);
     }
-    function I1(t, r, l, o, d) {
+    function I1(t, r, l, o, v) {
       {
         var p = Function.call.bind(F);
         for (var a in t)
@@ -340,12 +340,12 @@ function d0() {
             } catch (w) {
               n = w;
             }
-            n && !(n instanceof Error) && (I(d), g("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", o || "React class", l, a, typeof n), I(null)), n instanceof Error && !(n.message in f1) && (f1[n.message] = !0, I(d), g("Failed %s type: %s", l, n.message), I(null));
+            n && !(n instanceof Error) && (I(v), g("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", o || "React class", l, a, typeof n), I(null)), n instanceof Error && !(n.message in x1) && (x1[n.message] = !0, I(v), g("Failed %s type: %s", l, n.message), I(null));
           }
       }
     }
     var z1 = Array.isArray;
-    function U(t) {
+    function J(t) {
       return z1(t);
     }
     function $1(t) {
@@ -356,25 +356,25 @@ function d0() {
     }
     function Y1(t) {
       try {
-        return p1(t), !1;
+        return u1(t), !1;
       } catch {
         return !0;
       }
     }
-    function p1(t) {
+    function u1(t) {
       return "" + t;
     }
-    function u1(t) {
+    function m1(t) {
       if (Y1(t))
-        return g("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", $1(t)), p1(t);
+        return g("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", $1(t)), u1(t);
     }
     var A = V.ReactCurrentOwner, U1 = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, m1, w1, J;
-    J = {};
+    }, w1, k1, G;
+    G = {};
     function J1(t) {
       if (F.call(t, "ref")) {
         var r = Object.getOwnPropertyDescriptor(t, "ref").get;
@@ -394,13 +394,13 @@ function d0() {
     function K1(t, r) {
       if (typeof t.ref == "string" && A.current && r && A.current.stateNode !== r) {
         var l = b(A.current.type);
-        J[l] || (g('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', b(A.current.type), t.ref), J[l] = !0);
+        G[l] || (g('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', b(A.current.type), t.ref), G[l] = !0);
       }
     }
     function X1(t, r) {
       {
         var l = function() {
-          m1 || (m1 = !0, g("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
+          w1 || (w1 = !0, g("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
         };
         l.isReactWarning = !0, Object.defineProperty(t, "key", {
           get: l,
@@ -411,7 +411,7 @@ function d0() {
     function Q1(t, r) {
       {
         var l = function() {
-          w1 || (w1 = !0, g("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
+          k1 || (k1 = !0, g("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
         };
         l.isReactWarning = !0, Object.defineProperty(t, "ref", {
           get: l,
@@ -419,7 +419,7 @@ function d0() {
         });
       }
     }
-    var e0 = function(t, r, l, o, d, p, a) {
+    var e0 = function(t, r, l, o, v, p, a) {
       var n = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: i,
@@ -445,13 +445,13 @@ function d0() {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: d
+        value: v
       }), Object.freeze && (Object.freeze(n.props), Object.freeze(n)), n;
     };
-    function t0(t, r, l, o, d) {
+    function t0(t, r, l, o, v) {
       {
         var p, a = {}, n = null, j = null;
-        l !== void 0 && (u1(l), n = "" + l), G1(r) && (u1(r.key), n = "" + r.key), J1(r) && (j = r.ref, K1(r, d));
+        l !== void 0 && (m1(l), n = "" + l), G1(r) && (m1(r.key), n = "" + r.key), J1(r) && (j = r.ref, K1(r, v));
         for (p in r)
           F.call(r, p) && !U1.hasOwnProperty(p) && (a[p] = r[p]);
         if (t && t.defaultProps) {
@@ -463,26 +463,26 @@ function d0() {
           var k = typeof t == "function" ? t.displayName || t.name || "Unknown" : t;
           n && X1(a, k), j && Q1(a, k);
         }
-        return e0(t, n, j, d, o, A.current, a);
+        return e0(t, n, j, v, o, A.current, a);
       }
     }
-    var G = V.ReactCurrentOwner, k1 = V.ReactDebugCurrentFrame;
+    var K = V.ReactCurrentOwner, g1 = V.ReactDebugCurrentFrame;
     function y(t) {
       if (t) {
         var r = t._owner, l = q(t.type, t._source, r ? r.type : null);
-        k1.setExtraStackFrame(l);
+        g1.setExtraStackFrame(l);
       } else
-        k1.setExtraStackFrame(null);
+        g1.setExtraStackFrame(null);
     }
-    var K;
-    K = !1;
-    function X(t) {
+    var X;
+    X = !1;
+    function Q(t) {
       return typeof t == "object" && t !== null && t.$$typeof === i;
     }
-    function g1() {
+    function j1() {
       {
-        if (G.current) {
-          var t = b(G.current.type);
+        if (K.current) {
+          var t = b(K.current.type);
           if (t)
             return `
 
@@ -502,10 +502,10 @@ Check your code at ` + r + ":" + l + ".";
         return "";
       }
     }
-    var j1 = {};
+    var M1 = {};
     function l0(t) {
       {
-        var r = g1();
+        var r = j1();
         if (!r) {
           var l = typeof t == "string" ? t : t.displayName || t.name;
           l && (r = `
@@ -515,35 +515,35 @@ Check the top-level render call using <` + l + ">.");
         return r;
       }
     }
-    function M1(t, r) {
+    function Z1(t, r) {
       {
         if (!t._store || t._store.validated || t.key != null)
           return;
         t._store.validated = !0;
         var l = l0(r);
-        if (j1[l])
+        if (M1[l])
           return;
-        j1[l] = !0;
+        M1[l] = !0;
         var o = "";
-        t && t._owner && t._owner !== G.current && (o = " It was passed a child from " + b(t._owner.type) + "."), y(t), g('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', l, o), y(null);
+        t && t._owner && t._owner !== K.current && (o = " It was passed a child from " + b(t._owner.type) + "."), y(t), g('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', l, o), y(null);
       }
     }
-    function Z1(t, r) {
+    function C1(t, r) {
       {
         if (typeof t != "object")
           return;
-        if (U(t))
+        if (J(t))
           for (var l = 0; l < t.length; l++) {
             var o = t[l];
-            X(o) && M1(o, r);
+            Q(o) && Z1(o, r);
           }
-        else if (X(t))
+        else if (Q(t))
           t._store && (t._store.validated = !0);
         else if (t) {
-          var d = V1(t);
-          if (typeof d == "function" && d !== t.entries)
-            for (var p = d.call(t), a; !(a = p.next()).done; )
-              X(a.value) && M1(a.value, r);
+          var v = V1(t);
+          if (typeof v == "function" && v !== t.entries)
+            for (var p = v.call(t), a; !(a = p.next()).done; )
+              Q(a.value) && Z1(a.value, r);
         }
       }
     }
@@ -555,7 +555,7 @@ Check the top-level render call using <` + l + ">.");
         var l;
         if (typeof r == "function")
           l = r.propTypes;
-        else if (typeof r == "object" && (r.$$typeof === x || // Note: Memo only checks outer props here.
+        else if (typeof r == "object" && (r.$$typeof === d || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
         r.$$typeof === C))
           l = r.propTypes;
@@ -564,10 +564,10 @@ Check the top-level render call using <` + l + ">.");
         if (l) {
           var o = b(r);
           I1(l, t.props, "prop", o, t);
-        } else if (r.PropTypes !== void 0 && !K) {
-          K = !0;
-          var d = b(r);
-          g("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", d || "Unknown");
+        } else if (r.PropTypes !== void 0 && !X) {
+          X = !0;
+          var v = b(r);
+          g("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", v || "Unknown");
         }
         typeof r.getDefaultProps == "function" && !r.getDefaultProps.isReactClassApproved && g("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
@@ -584,48 +584,48 @@ Check the top-level render call using <` + l + ">.");
         t.ref !== null && (y(t), g("Invalid attribute `ref` supplied to `React.Fragment`."), y(null));
       }
     }
-    function C1(t, r, l, o, d, p) {
+    function b1(t, r, l, o, v, p) {
       {
         var a = _1(t);
         if (!a) {
           var n = "";
           (t === void 0 || typeof t == "object" && t !== null && Object.keys(t).length === 0) && (n += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var j = r0(d);
-          j ? n += j : n += g1();
+          var j = r0(v);
+          j ? n += j : n += j1();
           var w;
-          t === null ? w = "null" : U(t) ? w = "array" : t !== void 0 && t.$$typeof === i ? (w = "<" + (b(t.type) || "Unknown") + " />", n = " Did you accidentally export a JSX literal instead of a component?") : w = typeof t, g("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", w, n);
+          t === null ? w = "null" : J(t) ? w = "array" : t !== void 0 && t.$$typeof === i ? (w = "<" + (b(t.type) || "Unknown") + " />", n = " Did you accidentally export a JSX literal instead of a component?") : w = typeof t, g("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", w, n);
         }
-        var k = t0(t, r, l, d, p);
+        var k = t0(t, r, l, v, p);
         if (k == null)
           return k;
         if (a) {
           var Z = r.children;
           if (Z !== void 0)
             if (o)
-              if (U(Z)) {
+              if (J(Z)) {
                 for (var B = 0; B < Z.length; B++)
-                  Z1(Z[B], t);
+                  C1(Z[B], t);
                 Object.freeze && Object.freeze(Z);
               } else
                 g("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Z1(Z, t);
+              C1(Z, t);
         }
         return t === h ? i0(k) : o0(k), k;
       }
     }
     function s0(t, r, l) {
-      return C1(t, r, l, !0);
+      return b1(t, r, l, !0);
     }
     function n0(t, r, l) {
-      return C1(t, r, l, !1);
+      return b1(t, r, l, !1);
     }
     var h0 = n0, a0 = s0;
     _.Fragment = h, _.jsx = h0, _.jsxs = a0;
   }()), _;
 }
-({}).NODE_ENV === "production" ? Q.exports = c0() : Q.exports = d0();
-var e = Q.exports;
+({}).NODE_ENV === "production" ? e1.exports = c0() : e1.exports = d0();
+var e = e1.exports;
 const p0 = {
   accessibility: /* @__PURE__ */ e.jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 48 48", width: "48", height: "48", fill: "none", children: [
     /* @__PURE__ */ e.jsx("path", { d: "M11 18h10.024M37 18H21.024m0 0v8.8m0 13.2V26.8m5.952-8.8v8.8m0 13.2V26.8m-5.952 0h5.952", stroke: "currentColor", strokeWidth: "2", fill: "none" }),
@@ -1426,13 +1426,13 @@ const p0 = {
   verified: /* @__PURE__ */ e.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "24", height: "24", fill: "none", children: /* @__PURE__ */ e.jsx("path", { d: "m8.633 22.5-1.9-3.233-3.716-.784.4-3.683L1 12l2.417-2.783-.4-3.684 3.716-.783 1.9-3.25L12 3.017 15.367 1.5l1.916 3.25 3.7.783-.4 3.684L23 12l-2.417 2.8.4 3.683-3.7.784-1.916 3.233L12 20.983 8.633 22.5Zm.734-2.167L12 19.217l2.7 1.116 1.583-2.466 2.867-.717-.283-2.917L20.833 12l-1.966-2.283.283-2.917-2.867-.667-1.633-2.466L12 4.783 9.3 3.667 7.717 6.133 4.85 6.8l.283 2.917L3.167 12l1.966 2.233L4.85 17.2l2.867.667 1.65 2.466Zm1.566-4.933L16.6 9.767 15.383 8.6l-4.45 4.417-2.3-2.35L7.4 11.883l3.533 3.517Z", fill: "currentColor" }) }),
   danger: /* @__PURE__ */ e.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "24", height: "24", fill: "none", children: /* @__PURE__ */ e.jsx("path", { d: "M7.833 22 2 16.167V7.833L7.833 2h8.334L22 7.833v8.334L16.167 22H7.833Zm.834-5.37L12 13.296l3.333 3.334 1.297-1.297L13.296 12l3.334-3.333-1.297-1.297L12 10.704 8.667 7.37 7.37 8.667 10.704 12 7.37 15.333l1.297 1.297Zm-.056 3.518h6.778l4.76-4.76V8.612l-4.76-4.76H8.61l-4.76 4.76v6.778l4.76 4.76Z", fill: "currentColor" }) }),
   checkCircle: /* @__PURE__ */ e.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "24", height: "24", fill: "none", children: /* @__PURE__ */ e.jsx("path", { d: "M10.55 16.567 17.617 9.5l-1.234-1.217-5.833 5.834-2.95-2.95-1.217 1.216 4.167 4.184ZM12 22a9.696 9.696 0 0 1-3.883-.788 10.13 10.13 0 0 1-3.184-2.145 10.129 10.129 0 0 1-2.145-3.184A9.696 9.696 0 0 1 2 12a9.74 9.74 0 0 1 .788-3.9 10.028 10.028 0 0 1 2.145-3.175 10.2 10.2 0 0 1 3.184-2.137A9.696 9.696 0 0 1 12 2a9.74 9.74 0 0 1 3.9.788 10.098 10.098 0 0 1 3.175 2.137c.9.9 1.613 1.958 2.137 3.175A9.738 9.738 0 0 1 22 12a9.696 9.696 0 0 1-.788 3.883 10.2 10.2 0 0 1-2.137 3.184c-.9.905-1.958 1.62-3.175 2.145A9.738 9.738 0 0 1 12 22Zm0-1.667c2.322 0 4.292-.81 5.908-2.433 1.617-1.622 2.425-3.589 2.425-5.9 0-2.322-.808-4.292-2.425-5.908C16.292 4.475 14.322 3.667 12 3.667c-2.311 0-4.278.808-5.9 2.425C4.478 7.708 3.667 9.678 3.667 12c0 2.311.81 4.278 2.433 5.9 1.622 1.622 3.589 2.433 5.9 2.433Z", fill: "currentColor" }) })
-}, R1 = (...v) => v.filter(Boolean).join(" "), m0 = (v) => {
-  var f, u, m, x;
+}, z = (...f) => f.filter(Boolean).join(" "), m0 = (f) => {
+  var x, u, m, d;
   const {
     type: i = "info",
     children: s,
     title: h
-  } = v, c = {
+  } = f, c = {
     note: {
       label: "Note",
       icon: D.postItNote,
@@ -1464,7 +1464,7 @@ const p0 = {
       iconClass: "text-olive-30"
     }
   };
-  return !i || !Object.keys(c).includes(i) ? null : /* @__PURE__ */ e.jsxs("div", { className: R1(
+  return !i || !Object.keys(c).includes(i) ? null : /* @__PURE__ */ e.jsxs("div", { className: z(
     `es-alert es-alert--${i}`,
     "m-0 my-10 pl-10 pr-0 py-4 border-l-4 border-l-infinum",
     i === "info" && "border-l-sky-30",
@@ -1475,82 +1475,82 @@ const p0 = {
     i === "caution" && "border-l-candy-30"
   ), children: [
     h !== ":es-hide-title:" && /* @__PURE__ */ e.jsxs("i", { className: "flex gap-1.5 items-center font-sans text-12 uppercase not-italic leading-none font-medium mb-2", children: [
-      ((f = c[i]) == null ? void 0 : f.icon) && S.cloneElement((u = c[i]) == null ? void 0 : u.icon, {
-        className: R1("w-6 h-6", (m = c[i]) == null ? void 0 : m.iconClass)
+      ((x = c[i]) == null ? void 0 : x.icon) && N.cloneElement((u = c[i]) == null ? void 0 : u.icon, {
+        className: z("w-6 h-6", (m = c[i]) == null ? void 0 : m.iconClass)
       }),
-      /* @__PURE__ */ e.jsx("span", { className: "text-grey-500", children: h ?? ((x = c[i]) == null ? void 0 : x.label) })
+      /* @__PURE__ */ e.jsx("span", { className: "text-grey-500", children: h ?? ((d = c[i]) == null ? void 0 : d.label) })
     ] }),
     /* @__PURE__ */ e.jsx("div", { className: "font-sans text-16 text-black", children: s })
   ] });
-}, e1 = (v) => {
+}, t1 = (f) => {
   const {
     label: i,
     url: s,
     external: h = s == null ? void 0 : s.startsWith("http"),
     anchor: c = s == null ? void 0 : s.startsWith("#")
-  } = v;
-  let f = {};
-  h && (f = {
+  } = f;
+  let x = {};
+  h && (x = {
     rel: "noopener noreferrer",
     target: "_blank"
   });
   const u = "group isolate overflow-hidden relative bg-infinum text-white hover:text-white px-7.5 py-3.75 rounded-full inline-flex items-center gap-3 cursor-pointer text-16 font-bold before:bg-black before:absolute before:inset-0 before:-z-10 before:translate-y-full-plus-px hover:before:translate-y-0 focus:before:translate-y-0 before:transition-transform before:duration-300 hover:decoration-transparent focus:outline-offset-4 focus:outline-infinum";
   if (c) {
     const m = () => {
-      const x = document.querySelector(s);
-      x && x.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      const d = document.querySelector(s);
+      d && d.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     };
     return /* @__PURE__ */ e.jsxs("button", { className: u, onClick: m, children: [
       /* @__PURE__ */ e.jsx("span", { className: "group-hover:translate-x-3 group-focus:translate-x-3 transition duration-500", children: i }),
       /* @__PURE__ */ e.jsx("svg", { className: "group-hover:opacity-0 group-hover:translate-x-3 group-hover:scale-75 group-focus:opacity-0 group-focus:translate-x-3 group-focus:scale-75 origin-right transition duration-500", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 17 16", fill: "none", height: "16", width: "17", children: /* @__PURE__ */ e.jsx("path", { d: "M.5 8h14M9.234 2.725l5.978 5.979m-5.978 4.57 5.978-5.978", stroke: "currentColor", strokeWidth: "2", fill: "none" }) })
     ] });
   }
-  return /* @__PURE__ */ e.jsxs("a", { className: u, href: s, ...f, children: [
+  return /* @__PURE__ */ e.jsxs("a", { className: u, href: s, ...x, children: [
     /* @__PURE__ */ e.jsx("span", { className: "group-hover:translate-x-3 group-focus:translate-x-3 transition duration-500", children: i }),
     /* @__PURE__ */ e.jsx("svg", { className: "group-hover:opacity-0 group-hover:translate-x-3 group-hover:scale-75 group-focus:opacity-0 group-focus:translate-x-3 group-focus:scale-75 origin-right transition duration-500", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 17 16", fill: "none", height: "16", width: "17", children: /* @__PURE__ */ e.jsx("path", { d: "M.5 8h14M9.234 2.725l5.978 5.979m-5.978 4.57 5.978-5.978", stroke: "currentColor", strokeWidth: "2", fill: "none" }) })
   ] });
-}, w0 = (v) => {
+}, w0 = (f) => {
   const {
     title: i,
     subtitle: s,
     cards: h
-  } = v;
+  } = f;
   return /* @__PURE__ */ e.jsxs("div", { className: " gap-gutter px-side-padding p-side-padding py-10 desktop:pt-24 desktop:pb-36 desktop:grid desktop:grid-cols-12 desktop:auto-rows-auto", children: [
     /* @__PURE__ */ e.jsxs("div", { className: "col-start-1 col-span-3 row-start-1 row-span-full mb-10 desktop:mb-0", children: [
       /* @__PURE__ */ e.jsx("h3", { className: "text-36 font-bold mb-4 desktop:mb-1", children: i }),
       /* @__PURE__ */ e.jsx("p", { className: "text-16", children: s })
     ] }),
-    /* @__PURE__ */ e.jsx("div", { className: "col-start-5 col-span-8 flex flex-col items-start gap-y-20 desktop:grid desktop:grid-cols-2 desktop:auto-rows-auto desktop:gap-x-gutter", children: h.map(({ icon: c, text: f, buttonLabel: u, buttonUrl: m }, x) => /* @__PURE__ */ e.jsxs("div", { children: [
-      /* @__PURE__ */ e.jsx("div", { className: "w-20 h-20 bg-infinum text-white rounded-full flex items-center justify-center mb-5", children: S.cloneElement(c, { className: "w-20 h-20" }) }),
-      /* @__PURE__ */ e.jsx("h4", { className: "text-h3 font-bold font-display mb-10", children: f }),
-      u && m && /* @__PURE__ */ e.jsx(e1, { label: u, url: m })
-    ] }, x)) })
+    /* @__PURE__ */ e.jsx("div", { className: "col-start-5 col-span-8 flex flex-col items-start gap-y-20 desktop:grid desktop:grid-cols-2 desktop:auto-rows-auto desktop:gap-x-gutter", children: h.map(({ icon: c, text: x, buttonLabel: u, buttonUrl: m }, d) => /* @__PURE__ */ e.jsxs("div", { children: [
+      /* @__PURE__ */ e.jsx("div", { className: "w-20 h-20 bg-infinum text-white rounded-full flex items-center justify-center mb-5", children: N.cloneElement(c, { className: "w-20 h-20" }) }),
+      /* @__PURE__ */ e.jsx("h4", { className: "text-h3 font-bold font-display mb-10", children: x }),
+      u && m && /* @__PURE__ */ e.jsx(t1, { label: u, url: m })
+    ] }, d)) })
   ] });
-}, k0 = (v) => {
+}, k0 = (f) => {
   const {
     title: i,
     buttonLabel: s,
     buttonUrl: h,
     imageUrl: c,
-    imageAlt: f,
+    imageAlt: x,
     gray: u = !1
-  } = v;
+  } = f;
   return /* @__PURE__ */ e.jsxs("div", { className: `px-side-padding desktop:pr-0 py-10 desktop:py-20 desktop:grid desktop:grid-cols-2 desktop:items-center gap-gutter border-t border-t-grey-200 ${u ? "bg-grey-100" : ""}`, children: [
     /* @__PURE__ */ e.jsxs("div", { className: "mb-10 desktop:mb-0 text-center desktop:text-left flex flex-col items-center desktop:block", children: [
       /* @__PURE__ */ e.jsx("h3", { className: "text-h3 font-bold font-display mb-4 desktop:mb-10", children: i }),
-      /* @__PURE__ */ e.jsx(e1, { label: s, url: h })
+      /* @__PURE__ */ e.jsx(t1, { label: s, url: h })
     ] }),
-    /* @__PURE__ */ e.jsx("img", { className: "w-full", src: c, alt: f })
+    /* @__PURE__ */ e.jsx("img", { className: "w-full", src: c, alt: x })
   ] });
-}, g0 = (v) => {
+}, g0 = (f) => {
   const {
     title: i,
     text: s,
     imageUrl: h,
     imageAlt: c,
-    gray: f = !1
-  } = v;
-  return /* @__PURE__ */ e.jsxs("div", { className: `${f ? "bg-grey-100" : ""} desktop:grid desktop:grid-cols-12 gap-gutter px-side-padding p-side-padding desktop:py-20`, children: [
+    gray: x = !1
+  } = f;
+  return /* @__PURE__ */ e.jsxs("div", { className: `${x ? "bg-grey-100" : ""} desktop:grid desktop:grid-cols-12 gap-gutter px-side-padding p-side-padding desktop:py-20`, children: [
     /* @__PURE__ */ e.jsxs("div", { className: "col-start-9 col-span-4 mb-10 desktop:mb-0 max-w-lg desktop:max-w-full row-start-1", children: [
       /* @__PURE__ */ e.jsx("h1", { className: "text-h3 font-bold font-display mb-5", children: i }),
       /* @__PURE__ */ e.jsx("span", { className: "text-18", children: s })
@@ -1570,59 +1570,77 @@ const p0 = {
   facebook: /* @__PURE__ */ e.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "24", height: "24", fill: "none", children: /* @__PURE__ */ e.jsx("path", { d: "M22 11.994c0-5.522-4.478-10-10-10s-10 4.478-10 10c0 4.99 3.656 9.128 8.438 9.879v-6.988h-2.54v-2.891h2.54V9.79c0-2.506 1.493-3.89 3.777-3.89 1.094 0 2.239.195 2.239.195v2.46h-1.262c-1.242 0-1.63.771-1.63 1.563v1.876h2.774l-.443 2.891h-2.33v6.988c4.78-.75 8.437-4.887 8.437-9.879Z", fill: "currentColor" }) }),
   instagram: /* @__PURE__ */ e.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "24", height: "24", fill: "none", children: /* @__PURE__ */ e.jsx("path", { clipRule: "evenodd", fillRule: "evenodd", d: "M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6Zm10.9 2.75a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm-3 5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Z", fill: "currentColor" }) }),
   linkedin: /* @__PURE__ */ e.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "24", height: "24", fill: "none", children: /* @__PURE__ */ e.jsx("path", { clipRule: "evenodd", fillRule: "evenodd", d: "M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5Zm-2.5 8.2v5.3h-2.79v-4.93a1.4 1.4 0 0 0-1.4-1.4c-.77 0-1.39.63-1.39 1.4v4.93h-2.79v-8.37h2.79v1.11c.48-.78 1.47-1.3 2.32-1.3 1.8 0 3.26 1.46 3.26 3.26ZM6.88 8.56a1.686 1.686 0 0 0 0-3.37 1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68Zm1.39 1.57v8.37H5.5v-8.37h2.77Z", fill: "currentColor" }) })
-}, j0 = (v) => {
+}, j0 = (f) => {
   const {
     footer: i
-  } = v;
+  } = f;
   if (!i)
     return null;
   const { copyright: s, links: h } = i, c = h == null ? void 0 : h[0].items;
   return /* @__PURE__ */ e.jsxs("div", { className: "es-footer flex flex-col desktop:flex-row items-center gap-8 desktop:justify-between px-side-padding py-8 border-t border-t-grey-200 bg-grey-100", children: [
     /* @__PURE__ */ e.jsx("a", { href: "https://infinum.com", children: /* @__PURE__ */ e.jsx(v0, {}) }),
     /* @__PURE__ */ e.jsx("span", { className: "text-14", children: s }),
-    /* @__PURE__ */ e.jsx("div", { className: "flex gap-2", children: c.map(({ href: f, icon: u }, m) => /* @__PURE__ */ e.jsx("a", { href: f, children: f0[u] }, m)) })
+    /* @__PURE__ */ e.jsx("div", { className: "flex gap-2", children: c.map(({ href: x, icon: u }, m) => /* @__PURE__ */ e.jsx("a", { href: x, children: f0[u] }, m)) })
   ] });
-}, M0 = (v) => {
+}, M0 = (f) => {
   const {
     title: i,
     subtitle: s,
     buttonLabel: h,
     buttonUrl: c,
-    imageUrl: f,
+    imageUrl: x,
     imageAlt: u,
-    gray: m = !1
-  } = v;
-  return /* @__PURE__ */ e.jsxs("div", { className: `desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20 desktop:pb-36 ${m ? "bg-grey-100" : ""}`, children: [
-    /* @__PURE__ */ e.jsxs("div", { className: "space-y-5 mb-10 desktop:mb-0", children: [
-      /* @__PURE__ */ e.jsx("h1", { className: "text-h2 font-display font-bold", children: i }),
-      /* @__PURE__ */ e.jsx("p", { className: "text-16 max-w-sm", children: s }),
-      /* @__PURE__ */ e.jsx(e1, { label: h, url: c })
-    ] }),
-    /* @__PURE__ */ e.jsx("img", { src: f, alt: u })
-  ] });
-}, Z0 = (v) => {
+    gray: m = !1,
+    extendImage: d = !1
+  } = f;
+  return /* @__PURE__ */ e.jsxs(
+    "div",
+    {
+      className: z(
+        "desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20 desktop:pb-36",
+        m && "bg-grey-100",
+        d && "desktop:pb-2 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]"
+      ),
+      children: [
+        /* @__PURE__ */ e.jsxs("div", { className: "space-y-5 mb-10 desktop:mb-0", children: [
+          /* @__PURE__ */ e.jsx("h1", { className: "text-h2 font-display font-bold", children: i }),
+          /* @__PURE__ */ e.jsx("p", { className: "text-16 max-w-sm", children: s }),
+          /* @__PURE__ */ e.jsx(t1, { label: h, url: c })
+        ] }),
+        /* @__PURE__ */ e.jsx(
+          "img",
+          {
+            className: z(d && "desktop:row-span-2"),
+            src: x,
+            alt: u
+          }
+        )
+      ]
+    }
+  );
+}, Z0 = (f) => {
   const {
     title: i,
     cards: s,
     gray: h = !1,
     osProjectIcons: c = !1
-  } = v;
+  } = f;
   return /* @__PURE__ */ e.jsxs("div", { className: `px-side-padding py-10 desktop:py-24 ${h ? "bg-grey-100" : ""}`, children: [
     /* @__PURE__ */ e.jsx("h3", { className: "text-h3 font-bold font-display mb-4 desktop:mb-20", children: i }),
-    /* @__PURE__ */ e.jsx("div", { className: "flex flex-col items-start gap-y-10 desktop:gap-y-20 desktop:grid desktop:grid-cols-4 desktop:auto-rows-auto desktop:gap-x-gutter", children: s.map(({ icon: f, text: u, url: m }, x) => /* @__PURE__ */ e.jsxs("a", { className: "hover:no-underline hover:text-infinum", href: m, children: [
-      S.cloneElement(f, { className: `text-infinum ${c ? "w-20 h-20 -mx-2" : "w-24 h-24 -mx-5"}` }),
+    /* @__PURE__ */ e.jsx("div", { className: "flex flex-col items-start gap-y-10 desktop:gap-y-20 desktop:grid desktop:grid-cols-4 desktop:auto-rows-auto desktop:gap-x-gutter", children: s.map(({ icon: x, text: u, url: m }, d) => /* @__PURE__ */ e.jsxs("a", { className: "hover:no-underline hover:text-infinum", href: m, children: [
+      N.cloneElement(x, { className: `text-infinum ${c ? "w-20 h-20 -mx-2" : "w-24 h-24 -mx-5"}` }),
       /* @__PURE__ */ e.jsx("h4", { className: "text-24 font-bold", children: u })
-    ] }, x)) })
+    ] }, d)) })
   ] });
-}, C0 = (v) => {
+}, C0 = (f) => {
   const {
     title: i,
     imageUrl: s,
     imageAlt: h,
     children: c,
-    gray: f = !1
-  } = v;
-  return /* @__PURE__ */ e.jsxs("div", { className: `desktop:grid desktop:grid-cols-12 gap-gutter px-side-padding p-side-padding pt-0 desktop:pb-36 ${f ? "bg-grey-100" : ""}`, children: [
+    gray: x = !1
+  } = f;
+  return /* @__PURE__ */ e.jsxs("div", { className: `desktop:grid desktop:grid-cols-12 gap-gutter px-side-padding p-side-padding pt-0 desktop:pb-36 ${x ? "bg-grey-100" : ""}`, children: [
     /* @__PURE__ */ e.jsx("img", { className: "col-start-1 col-span-5", src: s, alt: h }),
     /* @__PURE__ */ e.jsxs("div", { className: "col-start-7 col-span-6 max-w-lg desktop:max-w-full", children: [
       /* @__PURE__ */ e.jsx("h1", { className: "text-h3 font-bold font-display mb-5", children: i }),
@@ -1632,27 +1650,27 @@ const p0 = {
 }, b0 = () => /* @__PURE__ */ e.jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 200 18", width: "200", height: "18", fill: "none", children: [
   /* @__PURE__ */ e.jsx("path", { d: "M48.6 1.133h-5.4V16.8h5.4V1.133Zm28.466 0v15.734H71.2L58 6.8v10.067h-5.4V1.133h6.466l12.6 9.6v-9.6h5.4ZM102.133 5.4H86.867v2.867h14.666v4.066H86.867v4.534h-5.334V1.133h20.6V5.4Zm8.734-4.267h-5.4V16.8h5.4V1.133Zm28.867 0v15.734h-5.8L120.667 6.8v10.067h-5.334V1.133h6.401l12.6 9.6v-9.6h5.4Zm9.599 8.134c0 1.133.267 2.066.933 2.666.667.667 1.867.934 3.534.934h2.866c3.067 0 4.6-1.2 4.6-3.6V1.133h5.4v8.134c0 2.266-.733 4.2-2.133 5.6-1.467 1.466-3.6 2.2-6.6 2.2H152.6c-1.534 0-2.867-.2-4-.6-1.134-.4-2.2-1.134-3.2-2.2-1-1.067-1.467-2.734-1.467-5V1.133h5.4v8.134Zm26.8 7.6H170.8V1.133h7.733l6.667 10.334 6.533-10.334h7.867v15.734h-5.334v-10.6l-6.733 10.6h-4.467l-6.933-10.6v10.6Z", fill: "currentColor" }),
   /* @__PURE__ */ e.jsx("path", { clipRule: "evenodd", fillRule: "evenodd", d: "M8.866 5.07c-2.151 0-3.81 1.66-3.81 3.93 0 2.19 1.648 3.88 3.77 3.93.94-.006 1.846-.376 3.02-1.333.848-.693 1.688-1.563 2.678-2.63-.963-1.037-1.786-1.886-2.617-2.564C10.725 5.44 9.814 5.07 8.866 5.07Zm9.103.166c-.946-1.01-1.903-1.977-2.87-2.766C13.405 1.09 11.396 0 8.866 0 3.809 0 0 4.044 0 9c0 4.901 3.808 8.911 8.759 9h.045c2.531 0 4.54-1.09 6.232-2.47.989-.807 1.967-1.8 2.933-2.832.966 1.033 1.944 2.025 2.932 2.832 1.692 1.38 3.702 2.47 6.233 2.47C32.112 18 36 13.972 36 9c0-5.005-3.982-9-8.928-9-2.531 0-4.54 1.09-6.233 2.47-.967.79-1.924 1.757-2.87 2.766Zm3.445 3.73c.99 1.068 1.83 1.938 2.679 2.63 1.182.965 2.093 1.334 3.041 1.334 2.105 0 3.81-1.677 3.81-3.93 0-2.22-1.735-3.93-3.872-3.93-.948 0-1.86.369-3.041 1.333-.831.678-1.654 1.527-2.617 2.564Z", fill: "#D82828" })
-] }), L0 = (v) => {
+] }), L0 = (f) => {
   const {
     title: i,
     subtitle: s,
     cards: h
-  } = v;
+  } = f;
   return /* @__PURE__ */ e.jsxs("div", { className: "gap-gutter px-side-padding p-side-padding py-10 desktop:py-24 desktop:grid desktop:grid-cols-12 desktop:auto-rows-auto", children: [
     /* @__PURE__ */ e.jsxs("div", { className: "col-start-1 col-span-3 row-start-1 row-span-full mb-10 desktop:mb-0", children: [
       /* @__PURE__ */ e.jsx("h3", { className: "text-36 font-bold mb-4 desktop:mb-1", children: i }),
       /* @__PURE__ */ e.jsx("p", { className: "text-16", children: s })
     ] }),
-    /* @__PURE__ */ e.jsx("div", { className: "col-start-5 col-span-8 flex flex-col items-start gap-y-10 desktop:grid desktop:grid-cols-2 desktop:auto-rows-auto desktop:gap-x-gutter", children: h.map(({ title: c, subtitle: f }, u) => /* @__PURE__ */ e.jsxs("div", { children: [
+    /* @__PURE__ */ e.jsx("div", { className: "col-start-5 col-span-8 flex flex-col items-start gap-y-10 desktop:grid desktop:grid-cols-2 desktop:auto-rows-auto desktop:gap-x-gutter", children: h.map(({ title: c, subtitle: x }, u) => /* @__PURE__ */ e.jsxs("div", { children: [
       /* @__PURE__ */ e.jsx("h4", { className: "text-24 font-bold mb-1.5", children: c }),
-      /* @__PURE__ */ e.jsx("p", { className: "text-16", children: f })
+      /* @__PURE__ */ e.jsx("p", { className: "text-16", children: x })
     ] }, u)) })
   ] });
-}, W0 = (v) => {
+}, W0 = (f) => {
   const {
     previous: i,
     next: s
-  } = v, h = /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+  } = f, h = /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
     /* @__PURE__ */ e.jsx("svg", { className: "-scale-x-100", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 17 16", fill: "none", height: "16", width: "17", children: /* @__PURE__ */ e.jsx("path", { d: "M.5 8h14M9.234 2.725l5.978 5.979m-5.978 4.57 5.978-5.978", stroke: "currentColor", strokeWidth: "2", fill: "none" }) }),
     "Previous"
   ] }), c = /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
@@ -1665,24 +1683,24 @@ const p0 = {
     !s && /* @__PURE__ */ e.jsx("div", { className: "flex items-center gap-3 text-16 font-bold text-grey-400 select-none", children: c }),
     s && /* @__PURE__ */ e.jsx("a", { className: "flex items-center gap-3 text-16 font-bold hover:no-underline", href: s, children: c })
   ] });
-}, R0 = (v) => {
+}, R0 = (f) => {
   const {
     imageUrl: i,
     imageAlt: s,
     title: h,
     description: c,
-    url: f,
+    url: x,
     newTab: u = !1
-  } = v, m = /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+  } = f, m = /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
     /* @__PURE__ */ e.jsx("img", { className: "aspect-[3/2] object-cover mb-2 border border-grey-100", src: i, alt: s }),
     /* @__PURE__ */ e.jsx("h2", { className: "transition-colors group-hover:text-infinum -mb-2", children: h }),
     /* @__PURE__ */ e.jsx("p", { children: c })
   ] });
-  let x = {};
-  return u && (x = {
+  let d = {};
+  return u && (d = {
     target: "_blank",
     rel: "noopener noreferrer"
-  }), f ? /* @__PURE__ */ e.jsx("a", { href: f, className: "max-w-sm flex flex-col gap-4 group hover:no-underline transition hover:scale-105", ...x, children: m }) : /* @__PURE__ */ e.jsx("div", { className: "max-w-sm flex flex-col", children: m });
+  }), x ? /* @__PURE__ */ e.jsx("a", { href: x, className: "max-w-sm flex flex-col gap-4 group hover:no-underline transition hover:scale-105", ...d, children: m }) : /* @__PURE__ */ e.jsx("div", { className: "max-w-sm flex flex-col", children: m });
 };
 export {
   m0 as AdmonitionCard,

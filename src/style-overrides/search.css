@@ -1,5 +1,5 @@
 .DocSearch.DocSearch-Button {
-	@apply bg-white border border-solid border-grey-100 flex gap-4 m-0 py-0 pl-2 pr-3 !important;
+	@apply bg-white border border-solid border-grey-200 flex gap-4 m-0 py-0 pl-2 pr-3 !important;
 
 	.DocSearch-Button-Placeholder {
 		@apply text-14 font-normal p-0 m-0 gap-2 !important;
@@ -24,6 +24,53 @@
 
 		&:is(kbd) {
 			@apply !leading-none;
+		}
+	}
+}
+
+.DocSearch-Modal {
+	@apply bg-white shadow-2xl rounded-xl !important;
+
+	.DocSearch-Form {
+		@apply border border-solid border-grey-200 hover:border-grey-400 focus-visible:border-infinum rounded-lg !important;
+	}
+
+	.DocSearch-Footer {
+		@apply shadow-none border-none bg-grey-100 border-t-grey-200 !important;
+	}
+
+	.DocSearch-Logo {
+		.DocSearch-Label {
+			@apply text-14 text-grey-400 hover:text-grey-500 !important;
+
+			svg {
+				.cls1,
+				.cls2 {
+					@apply fill-current !important;
+				}
+			}
+		}
+	}
+
+	.DocSearch-Commands {
+		@apply gap-1 !important;
+
+		.DocSearch-Commands-Key {
+			@apply shadow-none bg-grey-100 font-mono text-grey-500 rounded w-5 h-5 m-0 p-0 text-14 top-0 border-none !important;
+
+			background-image: none !important;
+
+			&:is(kbd) {
+				@apply !leading-none;
+			}
+		}
+	}
+
+	.DocSearch-Hits {
+		@apply mt-4 !important;
+
+		.DocSearch-Hit-source {
+			@apply bg-white border-b border-solid border-b-grey-300 font-sans text-24 font-bold !important;
 		}
 	}
 }

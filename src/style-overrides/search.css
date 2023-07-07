@@ -42,13 +42,11 @@
 	.DocSearch-Logo {
 		.DocSearch-Label {
 			@apply text-14 text-grey-400 hover:text-grey-500 !important;
+		}
 
-			svg {
-				.cls-1,
-				.cls-2 {
-					@apply fill-current !important;
-				}
-			}
+		.cls-1,
+		.cls-2 {
+			@apply fill-current !important;
 		}
 	}
 
@@ -85,7 +83,7 @@
 			@apply bg-white border-none font-sans text-12 uppercase font-medium text-black m-0 px-0 py-2 !important;
 
 			+ ul {
-				@apply mt-4 flex flex-col gap-2 !important;
+				@apply flex flex-col gap-2 !important;
 			}
 		}
 
@@ -118,7 +116,7 @@
 
 			&[aria-selected=true] {
 				mark {
-					@apply text-infinum !important;
+					@apply text-infinum no-underline font-bold drop-shadow-sm shadow-infinum/50 !important;
 				}
 
 				.DocSearch-Hit-Tree {
@@ -132,7 +130,7 @@
 		@apply m-0 p-4 !important;
 
 		a {
-			@apply cursor-pointer border border-solid border-grey-400 text-grey-500 bg-white hover:bg-grey-100 hover:text-black focus-visible:border-infinum focus-visible:text-infinum focus-visible:bg-infinum/5 !important;
+			@apply transition font-medium cursor-pointer px-3 py-1.5 rounded-lg border border-solid border-grey-400 text-grey-500 bg-white hover:bg-grey-400 hover:text-white focus-visible:border-infinum focus-visible:text-white focus-visible:bg-infinum focus-visible:outline-infinum/10 !important;
 		}
 	}
 }

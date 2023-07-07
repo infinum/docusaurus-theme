@@ -1599,7 +1599,7 @@ const p0 = {
       className: z(
         "desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20 desktop:pb-36",
         m && "bg-grey-100",
-        d && "desktop:pb-2 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]"
+        d && "desktop:pb-0 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]"
       ),
       children: [
         /* @__PURE__ */ e.jsxs("div", { className: "space-y-5 mb-10 desktop:mb-0", children: [

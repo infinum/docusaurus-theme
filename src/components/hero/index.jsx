@@ -31,7 +31,7 @@ export const Hero = (props) => {
 			className={classnames(
 				'desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20 desktop:pb-36',
 				gray && 'bg-grey-100',
-				extendImage && 'desktop:pb-2 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]'
+				extendImage && 'desktop:pb-0 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]'
 			)}
 		>
 			<div className='space-y-5 mb-10 desktop:mb-0'>

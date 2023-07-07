@@ -1,8 +1,12 @@
 .DocSearch.DocSearch-Button {
-	@apply bg-white border border-grey-100 flex gap-4 m-0 py-0 pl-2 pr-3 !important;
+	@apply bg-white border border-solid border-grey-100 flex gap-4 m-0 py-0 pl-2 pr-3 !important;
 
 	.DocSearch-Button-Placeholder {
-		@apply text-14 !leading-none font-normal p-0 m-0 gap-2 !important;
+		@apply text-14 font-normal p-0 m-0 gap-2 !important;
+
+		&:is(span) {
+			@apply !leading-none;
+		}
 	}
 
 	.DocSearch-Button-Container {
@@ -14,6 +18,12 @@
 	}
 
 	.DocSearch-Button-Key {
-		@apply shadow-none bg-grey-100 font-mono text-grey-500 rounded w-5 h-5 m-0 p-0 text-14 !leading-none top-0 border-none !important;
+		@apply shadow-none bg-grey-100 font-mono text-grey-500 rounded w-5 h-5 m-0 p-0 text-14 top-0 border-none !important;
+
+		background-image: none !important;
+
+		&:is(kbd) {
+			@apply !leading-none;
+		}
 	}
 }

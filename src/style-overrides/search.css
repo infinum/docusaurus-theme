@@ -82,7 +82,7 @@
 		@apply mt-4 !important;
 
 		.DocSearch-Hit-source {
-			@apply bg-white border-none font-sans text-12 uppercase text-grey-400 font-bold !important;
+			@apply bg-white border-none font-sans text-12 uppercase font-medium text-black m-0 px-0 py-2 !important;
 
 			+ ul {
 				@apply mt-4 flex flex-col gap-2 !important;
@@ -90,10 +90,10 @@
 		}
 
 		.DocSearch-Hit {
-			@apply bg-white border border-solid border-grey-200 m-0 p-0 !important;
+			@apply bg-white border border-solid border-grey-200 m-0 p-0 rounded-lg !important;
 
 			> a {
-				@apply shadow-none !important;
+				@apply shadow-none bg-none border-none rounded-lg !important;
 			}
 
 			.DocSearch-Hit-icon {
@@ -105,11 +105,25 @@
 			}
 
 			.DocSearch-Hit-path {
-				@apply text-grey-400 text-12 m-0 p-0 !important;
+				@apply text-grey-400 text-12 font-normal m-0 -mt-1 p-0 !important;
 			}
 
 			.DocSearch-Hit-action {
 				@apply text-grey-400 hover:text-infinum !important;
+			}
+
+			.DocSearch-Hit-Tree {
+				@apply text-grey-400 !important;
+			}
+
+			&[aria-selected=true] {
+				mark {
+					@apply text-infinum !important;
+				}
+
+				.DocSearch-Hit-Tree {
+					@apply text-grey-500 !important;
+				}
 			}
 		}
 	}

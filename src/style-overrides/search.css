@@ -70,7 +70,7 @@
 		}
 
 		.DocSearch-Label {
-			@apply text-grey-400 text-12 !important;
+			@apply text-grey-500 text-12 !important;
 		}
 
 		li {
@@ -125,6 +125,14 @@
 					@apply text-grey-500 !important;
 				}
 			}
+		}
+	}
+
+	.DocSearch-HitsFooter {
+		@apply m-0 p-4 !important;
+
+		a {
+			@apply cursor-pointer border border-solid border-grey-400 text-grey-500 bg-white hover:bg-grey-100 hover:text-black focus-visible:border-infinum focus-visible:text-infinum focus-visible:bg-infinum/5 !important;
 		}
 	}
 }

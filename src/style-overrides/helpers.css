@@ -17,3 +17,12 @@
 .es-footer-white ~ .es-footer {
 	@apply bg-white !important;
 }
+
+/* Visual enhancement only - :has will not work in FF (Jul 2023) */
+body:has(.es-navbar-white) .navbar {
+	@apply bg-white !important;
+
+	.DocSearch.DocSearch-Button {
+		@apply border border-solid border-grey-200 !important;
+	}
+}

@@ -44,6 +44,10 @@
 			@apply text-14 text-grey-400 hover:text-grey-500 !important;
 		}
 
+		svg {
+			@apply text-grey-400 hover:text-grey-500 !important;
+		}
+
 		.cls-1,
 		.cls-2 {
 			@apply fill-current !important;
@@ -83,7 +87,7 @@
 			@apply bg-white border-none font-sans text-12 uppercase font-medium text-black m-0 px-0 py-2 !important;
 
 			+ ul {
-				@apply flex flex-col gap-2 !important;
+				@apply flex flex-col gap-2 p-0 pt-1 !important;
 			}
 		}
 
@@ -91,7 +95,7 @@
 			@apply bg-white border border-solid border-grey-200 m-0 p-0 rounded-lg !important;
 
 			> a {
-				@apply shadow-none bg-none border-none rounded-lg !important;
+				@apply shadow-none bg-none border-none rounded-lg outline-infinum/75 !important;
 			}
 
 			.DocSearch-Hit-icon {
@@ -116,7 +120,9 @@
 
 			&[aria-selected=true] {
 				mark {
-					@apply text-infinum no-underline font-bold drop-shadow-sm shadow-infinum/50 !important;
+					@apply text-infinum no-underline !important;
+
+					filter: drop-shadow(0 0 0.125rem rgb(216 38 44 / 0.5)) !important;
 				}
 
 				.DocSearch-Hit-Tree {
@@ -126,11 +132,15 @@
 		}
 	}
 
+	.DocSearch-Hit-action-button {
+		@apply hover:bg-none !important;
+	}
+
 	.DocSearch-HitsFooter {
 		@apply m-0 p-4 !important;
 
 		a {
-			@apply transition font-medium cursor-pointer px-3 py-1.5 rounded-lg border border-solid border-grey-400 text-grey-500 bg-white hover:bg-grey-400 hover:text-white focus-visible:border-infinum focus-visible:text-white focus-visible:bg-infinum focus-visible:outline-infinum/10 !important;
+			@apply transition font-medium cursor-pointer px-3 py-1.5 rounded-lg border border-solid border-grey-400 text-grey-500 bg-white hover:bg-grey-400 hover:text-white focus-visible:border-infinum focus-visible:text-white focus-visible:bg-infinum focus-visible:outline-infinum/75 !important;
 		}
 	}
 }

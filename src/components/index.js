@@ -1,3 +1,5 @@
+/* eslint-disable padding-line-between-statements */
+
 import '../style-overrides/index.css';
 
 export { AdmonitionCard } from './admonition-card';

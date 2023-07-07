@@ -39,16 +39,16 @@ export const Button = (props) => {
 			<button className={classes} onClick={handleScroll}>
 				<span className='group-hover:translate-x-3 group-focus:translate-x-3 transition duration-500'>{label}</span>
 
-				<svg className='group-hover:opacity-0 group-hover:translate-x-3 group-hover:scale-75 group-focus:opacity-0 group-focus:translate-x-3 group-focus:scale-75 origin-right transition duration-500' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" fill="none" height="16" width="17"><path d="M.5 8h14M9.234 2.725l5.978 5.979m-5.978 4.57 5.978-5.978" stroke="currentColor" strokeWidth="2" fill="none"/></svg>
+				<svg className='group-hover:opacity-0 group-hover:translate-x-3 group-hover:scale-75 group-focus:opacity-0 group-focus:translate-x-3 group-focus:scale-75 origin-right transition duration-500' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" fill="none" height="16" width="17"><path d="M.5 8h14M9.234 2.725l5.978 5.979m-5.978 4.57 5.978-5.978" stroke="currentColor" strokeWidth="2" fill="none" /></svg>
 			</button>
-		)
+		);
 	}
 
 	return (
 		<a className={classes} href={url} {...extraProps}>
 			<span className='group-hover:translate-x-3 group-focus:translate-x-3 transition duration-500'>{label}</span>
 
-			<svg className='group-hover:opacity-0 group-hover:translate-x-3 group-hover:scale-75 group-focus:opacity-0 group-focus:translate-x-3 group-focus:scale-75 origin-right transition duration-500' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" fill="none" height="16" width="17"><path d="M.5 8h14M9.234 2.725l5.978 5.979m-5.978 4.57 5.978-5.978" stroke="currentColor" strokeWidth="2" fill="none"/></svg>
+			<svg className='group-hover:opacity-0 group-hover:translate-x-3 group-hover:scale-75 group-focus:opacity-0 group-focus:translate-x-3 group-focus:scale-75 origin-right transition duration-500' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 16" fill="none" height="16" width="17"><path d="M.5 8h14M9.234 2.725l5.978 5.979m-5.978 4.57 5.978-5.978" stroke="currentColor" strokeWidth="2" fill="none" /></svg>
 		</a>
 	);
 };

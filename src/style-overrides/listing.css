@@ -2,6 +2,10 @@
 .blog-list-page {
 	.navbar {
 		@apply bg-white;
+
+		.DocSearch.DocSearch-Button {
+			@apply bg-grey-100 !important;
+		}
 	}
 
 	.main-wrapper {

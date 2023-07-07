@@ -16,7 +16,8 @@ main {
 }
 
 .es-single-full-screen-child {
-	@apply w-full h-full grid grid-cols-1 grid-rows-1;
+	@apply grid !important;
+	@apply w-full h-full grid-cols-1 grid-rows-1;
 }
 
 .es-full-size {

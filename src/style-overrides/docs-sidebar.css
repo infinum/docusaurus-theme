@@ -56,6 +56,10 @@
 
 .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
 	@apply font-bold text-18 hover:bg-transparent;
+
+	&:first-child {
+		@apply mt-2 !important;
+	}
 }
 
 .theme-doc-sidebar-item-link-level-1,

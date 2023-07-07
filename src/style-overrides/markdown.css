@@ -40,4 +40,12 @@
 	.alert {
 		@apply shadow-none rounded-sm;
 	}
+
+	p + .theme-code-block {
+		@apply mt-2;
+	}
+
+	img {
+		@apply border border-grey-100 rounded;
+	}
 }

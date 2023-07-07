@@ -51,11 +51,15 @@
 }
 
 .menu__link--sublist {
-	@apply m-0 px-5 py-3 !important;
+	@apply m-0 px-5 py-3 hover:bg-transparent !important;
 }
 
-.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible {
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
 	@apply font-bold text-18 hover:bg-transparent;
+
+	&:first-child {
+		@apply mt-2 !important;
+	}
 }
 
 .theme-doc-sidebar-item-link-level-1,

@@ -1,4 +1,5 @@
 import { Button } from '../button';
+import { classnames } from '../../helpers/classnames';
 
 /**
  * Hero section with title, subtitle, button, and image on the right.
@@ -11,6 +12,7 @@ import { Button } from '../button';
  * @param {string} props.imageUrl Image URL.
  * @param {string} props.imageAlt Image alt text.
  * @param {boolean} [props.gray=false] If passed, the block is set on a light gray background.
+ * @param {boolean} [props.extendImage=false] If passed, the image is extended into the bottom padding. Useful with images that visually end "earlier", but have extra height for the shadow.
  */
 export const Hero = (props) => {
 	const {
@@ -21,16 +23,27 @@ export const Hero = (props) => {
 		imageUrl,
 		imageAlt,
 		gray = false,
+		extendImage = false,
 	} = props;
 
 	return (
-		<div className={`desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20 desktop:pb-36 ${gray ? 'bg-grey-100' : ''}`}>
+		<div
+			className={classnames(
+				'desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20 desktop:pb-36',
+				gray && 'bg-grey-100',
+				extendImage && 'desktop:pb-0 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]'
+			)}
+		>
 			<div className='space-y-5 mb-10 desktop:mb-0'>
 				<h1 className='text-h2 font-display font-bold'>{title}</h1>
 				<p className='text-16 max-w-sm'>{subtitle}</p>
 				<Button label={buttonLabel} url={buttonUrl} />
 			</div>
-			<img src={imageUrl} alt={imageAlt} />
+			<img
+				className={classnames(extendImage && 'desktop:row-span-2')}
+				src={imageUrl}
+				alt={imageAlt}
+			/>
 		</div>
 	);
 };

@@ -1,7 +1,28 @@
 .es-big-title {
+	@apply text-h1 font-display font-bold px-side-padding py-6 desktop:pt-20 desktop:pb-0;
+}
+
+.es-big-title-limited {
 	@apply text-h1 font-display font-bold max-w-[45rem] px-side-padding py-6 desktop:pt-20 desktop:pb-0;
+}
+
+.es-big-subtitle {
+	@apply text-16 -mt-2 desktop:mt-4 mb-10 desktop:mb-8 px-side-padding max-w-[68ch];
 }
 
 .es-blog-grid {
 	@apply flex flex-col desktop:grid desktop:grid-cols-3 auto-rows-auto gap-x-16 gap-y-10 desktop:gap-y-32 p-side-padding m-0;
+}
+
+.es-footer-white ~ .es-footer {
+	@apply bg-white !important;
+}
+
+/* Visual enhancement only - :has will not work in FF (Jul 2023) */
+body:has(.es-navbar-white) .navbar {
+	@apply bg-white !important;
+
+	.DocSearch.DocSearch-Button {
+		@apply border border-solid border-grey-200 !important;
+	}
 }

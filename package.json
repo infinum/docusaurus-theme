@@ -1,6 +1,6 @@
 {
 	"name": "@infinum/docusaurus-theme",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A collection of components and style overrides for Docusaurus pages in Infinum's open-source projects",
 	"private": false,
 	"type": "module",
@@ -8,6 +8,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
+		"watch": "vite build --watch",
 		"lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
 	},
@@ -17,14 +18,16 @@
 		"tailwindcss-fluid-type": "^2.0.3"
 	},
 	"devDependencies": {
+		"@infinum/eslint-plugin": "^1.0.0",
 		"@types/react": "^18.0.37",
 		"@types/react-dom": "^18.0.11",
+		"@typescript-eslint/utils": "^5.61.0",
 		"@vitejs/plugin-react": "^4.0.0",
 		"autoprefixer": "^10.4.14",
 		"eslint": "^8.38.0",
+		"eslint-plugin-jsx-a11y": "^6.7.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-react-refresh": "^0.3.4",
 		"postcss-import": "^15.1.0",
 		"postcss-nesting": "^11.3.0",
 		"tailwindcss": "^3.3.2",

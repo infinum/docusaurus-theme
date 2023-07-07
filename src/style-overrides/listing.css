@@ -2,6 +2,10 @@
 .blog-list-page {
 	.navbar {
 		@apply bg-white;
+
+		.DocSearch.DocSearch-Button {
+			@apply border border-solid border-grey-200 !important;
+		}
 	}
 
 	.main-wrapper {
@@ -130,5 +134,16 @@ section[class*='DocCategoryGeneratedIndexPage'] {
 			@apply flex flex-col gap-2 shadow-none rounded-md border border-grey-200 hover:text-infinum transition-colors;
 			@apply p-4 !important;
 		}
+	}
+}
+
+/* Blog list page specific */
+.blog-list-page {
+	.main-wrapper > .container.margin-vert--lg {
+		@apply p-0 m-0 !important;
+	}
+
+	.es-blog-grid + .pagination-nav {
+		@apply mx-side-padding;
 	}
 }

@@ -3,5 +3,9 @@
 
 	&__link {
 		@apply border-none p-0;
+
+		&--next {
+			@apply desktop:ml-auto;
+		}
 	}
 }

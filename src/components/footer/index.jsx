@@ -30,7 +30,7 @@ export const Footer = (props) => {
 	const socialLinks = links?.[0].items;
 
 	return (
-		<div className='flex flex-col desktop:flex-row items-center gap-8 desktop:justify-between px-side-padding py-8 border-t border-t-grey-200 bg-grey-100'>
+		<div className='es-footer flex flex-col desktop:flex-row items-center gap-8 desktop:justify-between px-side-padding py-8 border-t border-t-grey-200 bg-grey-100'>
 			<a href='https://infinum.com'><InfinumLogo /></a>
 
 			<span className='text-14'>{copyright}</span>

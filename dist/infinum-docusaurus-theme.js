@@ -1674,8 +1674,8 @@ const p0 = {
     url: f,
     newTab: u = !1
   } = v, m = /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
-    /* @__PURE__ */ e.jsx("img", { className: "aspect-[3/2] object-cover mb-4", src: i, alt: s }),
-    /* @__PURE__ */ e.jsx("h2", { className: "transition-colors group-hover:text-infinum", children: h }),
+    /* @__PURE__ */ e.jsx("img", { className: "aspect-[3/2] object-cover mb-2 border border-grey-100", src: i, alt: s }),
+    /* @__PURE__ */ e.jsx("h2", { className: "transition-colors group-hover:text-infinum -mb-2", children: h }),
     /* @__PURE__ */ e.jsx("p", { children: c })
   ] });
   let x = {};

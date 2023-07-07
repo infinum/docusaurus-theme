@@ -17,9 +17,9 @@ export const ShowcaseCard = (props) => {
 
 	const contents = (
 		<>
-			<img className='aspect-[3/2] object-cover mb-4' src={imageUrl} alt={imageAlt} />
+			<img className='aspect-[3/2] object-cover mb-2 border border-grey-100' src={imageUrl} alt={imageAlt} />
 
-			<h2 className='transition-colors group-hover:text-infinum'>{title}</h2>
+			<h2 className='transition-colors group-hover:text-infinum -mb-2'>{title}</h2>
 			<p>{description}</p>
 		</>
 	);

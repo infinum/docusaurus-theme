@@ -7,7 +7,7 @@
 }
 
 .es-big-subtitle {
-	@apply text-16 mt-4 mb-8 max-w-prose;
+	@apply text-16 -mt-2 desktop:mt-4 mb-10 desktop:mb-8 px-side-padding max-w-prose;
 }
 
 .es-blog-grid {

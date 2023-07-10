@@ -29,7 +29,7 @@
 }
 
 .DocSearch-Modal {
-	@apply bg-white shadow-2xl rounded-xl !important;
+	@apply bg-white shadow-2xl desktop:rounded-xl !important;
 
 	.DocSearch-Form {
 		@apply border border-solid border-grey-200 hover:border-grey-400 focus-visible:border-infinum rounded-lg !important;

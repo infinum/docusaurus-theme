@@ -1,5 +1,5 @@
 .DocSearch.DocSearch-Button {
-	@apply bg-white border border-solid border-grey-200 flex gap-4 m-0 py-0 pl-2 pr-3 !important;
+	@apply bg-white border border-solid border-grey-200 flex gap-4 m-0 py-0 px-2 desktop:pr-3 !important;
 
 	.DocSearch-Button-Placeholder {
 		@apply text-14 font-normal p-0 m-0 gap-2 !important;
@@ -14,7 +14,7 @@
 	}
 
 	.DocSearch-Button-Keys {
-		@apply m-0 p-0 flex gap-1 min-w-fit !important;
+		@apply hidden m-0 p-0 desktop:flex gap-1 min-w-fit !important;
 	}
 
 	.DocSearch-Button-Key {
@@ -29,7 +29,7 @@
 }
 
 .DocSearch-Modal {
-	@apply bg-white shadow-2xl rounded-xl !important;
+	@apply bg-white shadow-2xl desktop:rounded-xl !important;
 
 	.DocSearch-Form {
 		@apply border border-solid border-grey-200 hover:border-grey-400 focus-visible:border-infinum rounded-lg !important;
@@ -92,7 +92,7 @@
 		}
 
 		.DocSearch-Hit {
-			@apply bg-white border border-solid border-grey-200 m-0 p-0 rounded-lg !important;
+			@apply bg-white border border-solid border-grey-200 m-0 p-0 rounded-lg hover:border-infinum !important;
 
 			> a {
 				@apply shadow-none bg-none border-none rounded-lg outline-infinum/75 !important;
@@ -133,7 +133,9 @@
 	}
 
 	.DocSearch-Hit-action-button {
-		@apply hover:bg-none !important;
+		&:hover {
+			background: none !important;
+		}
 	}
 
 	.DocSearch-HitsFooter {

@@ -19,6 +19,10 @@ code:not(.prism-code code) {
 		@apply bg-grey-200/60 !important;
 	}
 
+	.token {
+		@apply !text-black;
+	}
+
 	.token.boolean,
 	.token.constant,
 	.token.deleted,
@@ -37,7 +41,9 @@ code:not(.prism-code code) {
 	.token.script,
 	.token.maybe-class-name,
 	.token.content,
-	.token.front-matter {
+	.token.front-matter,
+	.token.language-php,
+	.token.imports {
 		@apply text-black !important;
 	}
 
@@ -64,7 +70,8 @@ code:not(.prism-code code) {
 
 	.token.atrule,
 	.token.attr-value,
-	.token.keyword {
+	.token.keyword,
+	.token.color {
 		@apply text-sky-30 !important;
 	}
 

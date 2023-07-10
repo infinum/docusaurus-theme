@@ -28,7 +28,7 @@ export const IconLinkCards = (props) => {
 		)}>
 			<h3 className='text-h3 font-bold font-display mb-4 desktop:mb-20'>{title}</h3>
 
-			<div className='flex flex-col items-start gap-y-10 desktop:gap-y-20 tablet:grid tablet:grid-cols-2 desktop:grid-cols-4 tablet:auto-rows-auto tablet:gap-x-gutter'>
+			<div className='flex flex-col items-start gap-y-10 desktop:gap-y-20 tablet:grid tablet:grid-cols-2 desktop:grid-cols-4 tablet:auto-rows-auto tablet:gap-x-20 desktop:gap-x-gutter'>
 				{cards.map(({ icon, text, url }, i) => {
 					return (
 						<a className='hover:no-underline hover:text-infinum' href={url} key={i}>

@@ -23,7 +23,7 @@ export const CtaImageButton = (props) => {
 
 	return (
 		<div className={`px-side-padding desktop:pr-0 py-10 desktop:py-20 desktop:grid desktop:grid-cols-2 desktop:items-center gap-gutter border-t border-t-grey-200 ${gray ? 'bg-grey-100' : ''}`}>
-			<div className='mb-10 desktop:mb-0 text-center desktop:text-left flex flex-col items-center desktop:block'>
+			<div className='mb-10 desktop:mb-0 text-center desktop:text-left flex flex-col items-center desktop:block max-w-xl'>
 				<h3 className='text-h3 font-bold font-display mb-4 desktop:mb-10'>{title}</h3>
 				<Button label={buttonLabel} url={buttonUrl} />
 			</div>

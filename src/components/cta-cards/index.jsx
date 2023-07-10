@@ -22,7 +22,7 @@ export const CtaCards = (props) => {
 
 	return (
 		<div className=' gap-gutter px-side-padding p-side-padding py-10 desktop:pt-24 desktop:pb-36 desktop:grid desktop:grid-cols-12 desktop:auto-rows-auto'>
-			<div className='col-start-1 col-span-3 row-start-1 row-span-full mb-10 desktop:mb-0'>
+			<div className='col-start-1 col-span-3 row-start-1 row-span-full mb-10 desktop:mb-0 max-w-xl'>
 				<h3 className='text-36 font-bold mb-4 desktop:mb-1'>{title}</h3>
 				<p className='text-16'>{subtitle}</p>
 			</div>

@@ -35,7 +35,7 @@ export const Hero = (props) => {
 				!extendImage && 'desktop:pb-36',
 			)}
 		>
-			<div className='space-y-5 mb-10 desktop:mb-0'>
+			<div className='space-y-5 mb-10 desktop:mb-0 max-w-xl'>
 				<h1 className='text-h2 font-display font-bold'>{title}</h1>
 				<p className='text-16 max-w-sm'>{subtitle}</p>
 				<Button label={buttonLabel} url={buttonUrl} />

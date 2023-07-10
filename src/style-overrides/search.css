@@ -92,7 +92,7 @@
 		}
 
 		.DocSearch-Hit {
-			@apply bg-white border border-solid border-grey-200 m-0 p-0 rounded-lg hover:border-infinum !important;
+			@apply bg-white border border-solid border-grey-200 m-0 p-0 rounded-lg hover:border-infinum transition-colors !important;
 
 			> a {
 				@apply shadow-none bg-none border-none rounded-lg outline-infinum/75 !important;
@@ -122,7 +122,7 @@
 				mark {
 					@apply text-infinum no-underline !important;
 
-					filter: drop-shadow(0 0 0.125rem rgb(216 38 44 / 0.5)) !important;
+					filter: drop-shadow(0 0 0.125rem rgb(216 38 44 / 0.25)) !important;
 				}
 
 				.DocSearch-Hit-Tree {

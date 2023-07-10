@@ -29,9 +29,10 @@ export const Hero = (props) => {
 	return (
 		<div
 			className={classnames(
-				'desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20 desktop:pb-36',
+				'desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20',
 				gray && 'bg-grey-100',
-				extendImage && 'desktop:pb-0 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]'
+				extendImage && 'desktop:pb-0 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]',
+				!extendImage && 'desktop:pb-36',
 			)}
 		>
 			<div className='space-y-5 mb-10 desktop:mb-0'>

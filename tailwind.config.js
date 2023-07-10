@@ -8,6 +8,7 @@ export default {
 	},
 	theme: {
 		screens: {
+			'tablet': '496px', // Mobile-like for specific small tablet cases
 			'desktop': '997px', // Docusaurus desktop breakpoint
 		},
 		fontFamily: {

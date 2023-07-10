@@ -65,7 +65,8 @@ code:not(.prism-code code) {
 
 	.token.atrule,
 	.token.attr-value,
-	.token.keyword {
+	.token.keyword,
+	.token.color {
 		@apply text-sky-30 !important;
 	}
 

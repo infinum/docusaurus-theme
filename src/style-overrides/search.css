@@ -133,7 +133,9 @@
 	}
 
 	.DocSearch-Hit-action-button {
-		@apply hover:bg-none !important;
+		&:hover {
+			background: none !important;
+		}
 	}
 
 	.DocSearch-HitsFooter {

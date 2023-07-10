@@ -43,7 +43,8 @@ code:not(.prism-code code) {
 	.token.content,
 	.token.front-matter,
 	.token.language-php,
-	.token.imports {
+	.token.imports,
+	.token.unit {
 		@apply text-black !important;
 	}
 

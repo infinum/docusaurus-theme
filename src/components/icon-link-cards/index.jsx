@@ -1,4 +1,5 @@
 import React from 'react';
+import { classnames } from '../../helpers/classnames';
 
 /**
  * Section with a title and cards (with an icon and text).
@@ -21,14 +22,17 @@ export const IconLinkCards = (props) => {
 	} = props;
 
 	return (
-		<div className={`px-side-padding py-10 desktop:py-24 ${gray ? 'bg-grey-100' : ''}`}>
+		<div className={classnames(
+			'px-side-padding py-10 desktop:py-24',
+			gray && 'bg-grey-100',
+		)}>
 			<h3 className='text-h3 font-bold font-display mb-4 desktop:mb-20'>{title}</h3>
 
-			<div className='flex flex-col items-start gap-y-10 desktop:gap-y-20 desktop:grid desktop:grid-cols-4 desktop:auto-rows-auto desktop:gap-x-gutter'>
+			<div className='flex flex-col items-start gap-y-10 desktop:gap-y-20 tablet:grid tablet:grid-cols-2 desktop:grid-cols-4 tablet:auto-rows-auto tablet:gap-x-gutter'>
 				{cards.map(({ icon, text, url }, i) => {
 					return (
 						<a className='hover:no-underline hover:text-infinum' href={url} key={i}>
-							{React.cloneElement(icon, {className: `text-infinum ${osProjectIcons ? 'w-20 h-20 -mx-2' : 'w-24 h-24 -mx-5'}`})}
+							{React.cloneElement(icon, { className: `text-infinum ${osProjectIcons ? 'w-20 h-20 -mx-2' : 'w-24 h-24 -mx-5'}` })}
 							<h4 className='text-24 font-bold'>{text}</h4>
 						</a>
 					);

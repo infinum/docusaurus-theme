@@ -29,19 +29,20 @@ export const Hero = (props) => {
 	return (
 		<div
 			className={classnames(
-				'desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding desktop:pt-20',
+				'flex flex-col-reverse desktop:grid desktop:grid-cols-2 gap-gutter p-side-padding pb-20 desktop:pb-side-padding desktop:pt-20 items-center',
 				gray && 'bg-grey-100',
 				extendImage && 'desktop:pb-0 desktop:gap-y-0 desktop:grid-rows-[auto_9rem]',
 				!extendImage && 'desktop:pb-36',
 			)}
 		>
-			<div className='space-y-5 mb-10 desktop:mb-0 max-w-xl'>
-				<h1 className='text-h2 font-display font-bold'>{title}</h1>
+			<div className='space-y-5'>
+				<h1 className='text-h2 font-display font-bold max-w-[15ch]'>{title}</h1>
 				<p className='text-16 max-w-sm'>{subtitle}</p>
 				<Button label={buttonLabel} url={buttonUrl} />
 			</div>
+
 			<img
-				className={classnames(extendImage && 'desktop:row-span-2')}
+				className={classnames('w-full mb-5 desktop:mb-0', extendImage && 'desktop:row-span-2')}
 				src={imageUrl}
 				alt={imageAlt}
 			/>

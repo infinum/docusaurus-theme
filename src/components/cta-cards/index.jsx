@@ -27,12 +27,12 @@ export const CtaCards = (props) => {
 				<p className='text-16'>{subtitle}</p>
 			</div>
 
-			<div className='col-start-5 col-span-8 flex flex-col items-start gap-y-20 desktop:grid desktop:grid-cols-2 desktop:auto-rows-auto desktop:gap-x-gutter'>
+			<div className='col-start-5 col-span-8 flex flex-col items-start gap-y-20 desktop:grid desktop:grid-cols-fit20 desktop:auto-rows-auto desktop:gap-x-gutter'>
 				{cards.map(({ icon, text, buttonLabel, buttonUrl }, i) => {
 					return (
 						<div key={i}>
 							<div className='w-20 h-20 bg-infinum text-white rounded-full flex items-center justify-center mb-5'>{React.cloneElement(icon, {className: 'w-20 h-20'})}</div>
-							<h4 className='text-h3 font-bold font-display mb-10'>{text}</h4>
+							<h4 className='text-h3 font-bold font-display mb-10 max-w-prose-mini'>{text}</h4>
 							{buttonLabel && buttonUrl &&
 								<Button label={buttonLabel} url={buttonUrl} />
 							}

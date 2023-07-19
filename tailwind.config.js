@@ -73,6 +73,15 @@ export default {
 				'3.75': '0.9375rem',
 				'7.5': '1.875rem',
 				'full-plus-px': 'calc(100% + 1px)',
+				'navbar': '6.25rem',
+				'prose-mini': '15ch',
+				'prose-half': '32ch',
+				'prose-lg': '75ch',
+			},
+			maxWidth: {
+				'prose-mini': '15ch',
+				'prose-half': '32ch',
+				'prose-lg': '75ch',
 			},
 			listStyleType: {
 				'circle-fill': "'●'",
@@ -80,10 +89,24 @@ export default {
 				'square-fill': "'■'",
 				'square-hollow': "'□'",
 			},
+			gridTemplateColumns: {
+				fit20: 'repeat(auto-fit, minmax(20rem, 1fr))'
+			},
 		},
 	},
 	plugins: [
 		require('tailwindcss-fluid-type')({
+			settings: {
+				fontSizeMin: 1.125,
+				fontSizeMax: 1.5,
+				ratioMin: 1.125,
+				ratioMax: 1.2,
+				screenMin: 20,
+				screenMax: 135,
+				unit: 'rem',
+				prefix: '',
+				extendValues: true,
+			},
 			values: {
 				'12': [-3.25, {
 					lineHeight: 1.33,

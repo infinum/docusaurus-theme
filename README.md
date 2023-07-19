@@ -57,9 +57,8 @@ This theme adds style overrides and new components for building consistent open-
 
 4. Override some of the default components
    - Replace the footer
-     - Run `npm run swizzle @docusaurus/theme-classic Footer -- --eject`
-     - Go to `src/theme/Footer` and remove everything except `index.js`
-     - Replace the contents of `index.js` with:
+     - Go to `src/theme` and create a `Footer` folder in it
+     - Create an `index.js` file with the following contents:
         ```jsx
         import React from 'react';
         import { useThemeConfig } from '@docusaurus/theme-common';
@@ -76,10 +75,10 @@ This theme adds style overrides and new components for building consistent open-
 
         export default React.memo(Footer);
         ```
-    - Replace the contents of the blog listing page
-      - Run `npm run swizzle @docusaurus/theme-classic BlogListPage -- --eject`
-      - Go to `src/theme/BlogListPage` and remove everything except `index.js`
-      - Replace the contents fo `index.js` with:
+
+   - Replace the contents of the blog listing page
+     - Go to `src/theme` and create a `BlogListPage` folder in it
+     - Create an `index.js` file with the following contents:
           ```jsx
           import React from 'react';
           import clsx from 'clsx';
@@ -93,7 +92,8 @@ This theme adds style overrides and new components for building consistent open-
           import BlogListPaginator from '@theme/BlogListPaginator';
           import SearchMetadata from '@theme/SearchMetadata';
           import BlogPostItems from '@theme/BlogPostItems';
-          import { IconLinkCards, CtaImageButton, icons } from '@infinum/docusaurus-theme';
+          import { EsOpenSource } from '../sections/os-projects';
+          import { EsOsFreebies } from '../sections/os-freebies';
 
           function BlogListPageMetadata(props) {
           	const { metadata } = props;
@@ -106,7 +106,7 @@ This theme adds style overrides and new components for building consistent open-
           	return (
           		<>
           			<PageMetadata title={title} description={blogDescription} />
-          			<SearchMetadata tag="blog_posts_list" />
+          			<SearchMetadata tag='blog_posts_list' />
           		</>
           	);
           }
@@ -116,70 +116,19 @@ This theme adds style overrides and new components for building consistent open-
 
           	return (
           		<BlogLayout>
-          			<h1 className='es-big-title'>Typing as we code</h1>
+          			<h1 className='es-big-title'>Typing as <wbr /> we code</h1>
+
           			<div className='es-blog-grid'>
           				<BlogPostItems items={items} />
           			</div>
+
           			<BlogListPaginator metadata={metadata} />
-
-
-          			<IconLinkCards
-          				gray
-          				title='Start exploring'
-          				cards={[
-          					{
-          						icon: icons.wordpress,
-          						text: 'Eightshift Boilerplate',
-          						url: '/blog'
-          					},
-          					{
-          						icon: icons.lockPrivacySecurity,
-          						text: 'Eightshift Coding Standards for WordPress',
-          						url: '/blog'
-          					},
-          					{
-          						icon: icons.userJourney,
-          						text: 'Eightshift Boilerplate Plugin',
-          						url: '/blog'
-          					},
-          					{
-          						icon: icons.book,
-          						text: 'Eightshift Libs',
-          						url: '/blog'
-          					},
-          					{
-          						icon: icons.frontendDevelopment,
-          						text: 'Eightshift Frontend Libs',
-          						url: '/blog'
-          					},
-          					{
-          						icon: icons.designerPenTool,
-          						text: 'Eightshift Forms',
-          						url: '/blog'
-          					},
-          					{
-          						icon: icons.book2,
-          						text: 'Eightshift Docs',
-          						url: '/blog'
-          					},
-          					{
-          						icon: icons.book,
-          						text: 'Eightshift Storybook',
-          						url: '/blog'
-          					}
-          				]}
-          			/>
-
-          			<CtaImageButton
-          				gray
-          				title='Find more libraries, tools, and design assets  free for everyone to use.'
-          				buttonLabel='Open-source freebies'
-          				buttonUrl='/blog'
-          				imageUrl='/img/wp4.png'
-          			/>
+          			<EsOpenSource gray />
+          			<EsOsFreebies gray />
           		</BlogLayout>
           	);
           }
+
           export default function BlogListPage(props) {
           	return (
           		<HtmlClassNameProvider
@@ -195,4 +144,33 @@ This theme adds style overrides and new components for building consistent open-
           ```
           (make sure to replace any of the generic content here, like the IconLinkCards)
 
+   - Replace the _Admonition_ cards
+     - Go to `src/theme` and create a `Admonition` folder in it
+     - Create an `index.js` file with the following contents:
+          ```jsx
+          import React from 'react';
+          import { AdmonitionCard } from '@infinum/docusaurus-theme';
+
+          export default function Admonition(props) {
+          	return (
+          		<AdmonitionCard {...props} />
+          	);
+          }
+          ```
+
 5. Build your site `npm start` and check everything
+
+## Built-in components
+_More detailed description coming soon_
+
+- `CtaCards`
+- `CtaImageButton`
+- `FeatureShowcase`
+- `Hero`
+- `IconLinkCards`
+- `ImageAndText`
+- `InfinumLogo`
+- `ShowcaseCard`
+- `TextCards`
+
+- `icons`

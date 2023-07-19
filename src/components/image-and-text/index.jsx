@@ -1,3 +1,5 @@
+import { classnames } from '../../helpers/classnames';
+
 /**
  * Section with an image on the left, title and variable content on the right.
  *
@@ -17,8 +19,11 @@ export const ImageAndText = (props) => {
 	} = props;
 
 	return (
-		<div className={`desktop:grid desktop:grid-cols-12 gap-gutter px-side-padding p-side-padding pt-0 desktop:pb-36 ${gray ? 'bg-grey-100' : ''}`}>
-			<img className='col-start-1 col-span-5' src={imageUrl} alt={imageAlt} />
+		<div className={classnames(
+			'desktop:grid desktop:grid-cols-12 gap-gutter px-side-padding p-side-padding pt-0 desktop:pb-36 items-center',
+			gray && 'bg-grey-100'
+		)}>
+			<img className='col-start-1 col-span-5 w-full' src={imageUrl} alt={imageAlt} />
 
 			<div className='col-start-7 col-span-6 max-w-lg desktop:max-w-xl'>
 				<h1 className='text-h3 font-bold font-display mb-5'>{title}</h1>

@@ -88,6 +88,10 @@ export default {
 				'circle-hollow': "'○'",
 				'square-fill': "'■'",
 				'square-hollow': "'□'",
+				'lower-roman': 'lower-roman',
+				'upper-roman': 'upper-roman',
+				'upper-alpha': 'upper-alpha',
+				'lower-alpha': 'lower-alpha',
 			},
 			gridTemplateColumns: {
 				fit20: 'repeat(auto-fit, minmax(20rem, 1fr))'

@@ -96,17 +96,6 @@ export default {
 	},
 	plugins: [
 		require('tailwindcss-fluid-type')({
-			settings: {
-				fontSizeMin: 1.125,
-				fontSizeMax: 1.5,
-				ratioMin: 1.125,
-				ratioMax: 1.2,
-				screenMin: 20,
-				screenMax: 135,
-				unit: 'rem',
-				prefix: '',
-				extendValues: true,
-			},
 			values: {
 				'12': [-3.25, {
 					lineHeight: 1.33,

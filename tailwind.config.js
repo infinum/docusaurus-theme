@@ -88,6 +88,10 @@ export default {
 				'circle-hollow': "'○'",
 				'square-fill': "'■'",
 				'square-hollow': "'□'",
+				'lower-roman': 'lower-roman',
+				'upper-roman': 'upper-roman',
+				'upper-alpha': 'upper-alpha',
+				'lower-alpha': 'lower-alpha',
 			},
 			gridTemplateColumns: {
 				fit20: 'repeat(auto-fit, minmax(20rem, 1fr))'
@@ -96,17 +100,6 @@ export default {
 	},
 	plugins: [
 		require('tailwindcss-fluid-type')({
-			settings: {
-				fontSizeMin: 1.125,
-				fontSizeMax: 1.5,
-				ratioMin: 1.125,
-				ratioMax: 1.2,
-				screenMin: 20,
-				screenMax: 135,
-				unit: 'rem',
-				prefix: '',
-				extendValues: true,
-			},
 			values: {
 				'12': [-3.25, {
 					lineHeight: 1.33,

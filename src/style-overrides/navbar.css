@@ -1,5 +1,5 @@
 .navbar {
-	@apply shadow-none h-navbar px-side-padding py-0 bg-grey-100;
+	@apply shadow-none h-navbar px-6 py-0 bg-grey-100;
 
 	&__brand {
 		@apply pt-1;

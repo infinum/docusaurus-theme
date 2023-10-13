@@ -49,4 +49,10 @@
 			}
 		}
 	}
+
+	.markdown {
+		img {
+			@apply rounded-md border border-grey-200 bg-grey-100;
+		}
+	}
 }

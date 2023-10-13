@@ -20,6 +20,10 @@ main {
 	@apply w-full h-full grid-cols-1 grid-rows-1;
 }
 
+.es-has-t-border {
+	@apply border-t border-grey-200;
+}
+
 .es-full-size {
 	@apply h-full w-full;
 }

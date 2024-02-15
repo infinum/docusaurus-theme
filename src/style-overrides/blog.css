@@ -11,14 +11,17 @@
 		> .row {
 			@apply m-0 p-0 block desktop:grid desktop:justify-between w-full max-w-full;
 
-			grid-template-columns: auto 1fr;
+			grid-template-columns: minmax(0, 20rem) minmax(0, 1fr) minmax(0, 15rem);
 
 			> .col {
 				@apply p-0 m-0 !important;
 
-				&.col--3,
+				&.col--3 {
+					@apply w-full max-w-full;
+				}
+
 				&.col--2 {
-					@apply w-80 max-w-xs;
+					@apply w-full max-w-full;
 				}
 
 				&.col--7 {

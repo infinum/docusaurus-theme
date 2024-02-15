@@ -20,3 +20,19 @@ main[class*='docMainContainer'] {
 div.generatedIndexPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module {
 	@apply max-w-full w-full !important;
 }
+
+button.tocCollapsibleButton_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module {
+	@apply text-14 bg-white border border-grey-300 border-solid rounded-md appearance-none;
+}
+
+button.tocCollapsibleButtonExpanded_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-CollapseButton-styles-module {
+	@apply rounded-b-none;
+}
+
+div.tocCollapsibleContent_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-styles-module {
+	@apply rounded-t-none rounded-b-md border border-grey-300 border-solid border-t-transparent bg-white;
+}
+
+div.tocCollapsibleContent_node_modules-\@docusaurus-theme-classic-lib-theme-TOCCollapsible-styles-module .table-of-contents {
+	@apply bg-transparent border-t-0 m-0 p-0;
+}

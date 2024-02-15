@@ -1,6 +1,6 @@
 {
 	"name": "@infinum/docusaurus-theme",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"description": "A collection of components and style overrides for Docusaurus pages in Infinum's open-source projects",
 	"private": false,
 	"type": "module",

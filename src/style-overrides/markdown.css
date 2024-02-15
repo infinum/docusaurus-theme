@@ -1,12 +1,12 @@
 .markdown {
-	@apply space-y-5;
+	@apply space-y-5 text-16;
 
 	ul,
 	ol {
 		@apply ml-4 mr-0 my-4;
 
 		li {
-			@apply pl-2 marker:text-18;
+			@apply pl-2 marker:text-18 text-16;
 		}
 	}
 

@@ -2,10 +2,15 @@ main[class*='docMainContainer'] {
 	> .container {
 		--ifm-container-width-xl: 100%;
 
-		@apply p-6 desktop:p-20 m-0 w-full !important;
+		@apply p-6 desktop:p-8 desktop:pl-12 m-0 w-full !important;
 
 		> .row {
 			@apply w-full max-w-full !important;
+			@apply m-0;
+
+			> .col {
+				@apply px-0;
+			}
 		}
 	}
 }

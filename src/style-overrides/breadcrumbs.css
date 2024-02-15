@@ -1,9 +1,10 @@
 .breadcrumbs {
 	@apply mb-12 !important;
+	@apply overflow-x-auto;
 
 	&,
 	&__item {
-		@apply flex m-0 p-0 items-center gap-6;
+		@apply flex m-0 p-0 items-center gap-6 shrink-0;
 	}
 
 	&__item {
@@ -23,4 +24,8 @@
 			@apply hover:bg-transparent;
 		}
 	}
+}
+
+nav.theme-doc-breadcrumbs breadcrumbsContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocBreadcrumbs-styles-module {
+	@apply w-full;
 }

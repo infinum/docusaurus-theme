@@ -77,4 +77,25 @@
 	img {
 		@apply border border-grey-100 rounded;
 	}
+
+	table tr,
+	table thead {
+		@apply bg-transparent;
+	}
+
+	details {
+		@apply bg-transparent border-grey-300 text-16 flex p-0 !rounded-md;
+	}
+
+	details summary {
+		@apply px-4 py-3 text-14 font-medium leading-4 flex gap-1 items-center before:static before:m-0 before:p-0 m-0 p-0 before:border-l-grey-500;
+	}
+
+	details[open] summary {
+		@apply before:border-l-infinum;
+	}
+
+	details > div > div {
+		@apply border-t-grey-200 px-4 py-3 m-0;
+	}
 }

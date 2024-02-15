@@ -8,4 +8,17 @@
 			@apply desktop:ml-auto;
 		}
 	}
+
+	&__label {
+		@apply text-24 transition-colors;
+		@apply before:text-grey-400 hover:before:text-infinum after:text-grey-400 hover:after:text-infinum before:transition-colors after:transition-colors;
+	}
+
+	&__link--prev &__label::before {
+		content: '⬅ ' !important;
+	}
+
+	&__link--next &__label::after {
+		content: ' ⮕' !important;
+	}
 }

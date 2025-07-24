@@ -11,7 +11,7 @@ This theme adds style overrides and new components for building consistent open-
    `npx create-docusaurus@latest my-website classic`
 
 2. Install the Infinum Docusaurus theme package:
-   `npm i @infinum/docusaurus-theme`
+   `bun i @infinum/docusaurus-theme`
 
 3. Configure Docusaurus:
    - Open the config file (`docusaurus.config.js`)

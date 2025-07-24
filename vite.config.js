@@ -20,6 +20,15 @@ export default defineConfig({
 		manifest: true,
 		rollupOptions: {
 			external: [...Object.keys(packageJson.peerDependencies)],
+			output: {
+				assetFileNames: (assetInfo) => {
+					if (assetInfo.name === 'docusaurus-theme.css') {
+						return 'style.css';
+					}
+
+					return assetInfo.name;
+				},
+			},
 		},
 	},
 	watch: {

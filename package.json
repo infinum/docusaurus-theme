@@ -1,6 +1,6 @@
 {
 	"name": "@infinum/docusaurus-theme",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "A collection of components and style overrides for Docusaurus pages in Infinum's open-source projects",
 	"private": false,
 	"type": "module",
@@ -14,29 +14,29 @@
 		"deploy": "npm run build && npm publish"
 	},
 	"dependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"tailwindcss-fluid-type": "^2.0.3"
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"tailwindcss-fluid-type": "^2.0.7"
 	},
 	"devDependencies": {
-		"@infinum/eslint-plugin": "^1.0.0",
-		"@types/react": "^18.0.37",
-		"@types/react-dom": "^18.0.11",
-		"@typescript-eslint/utils": "^5.61.0",
-		"@vitejs/plugin-react": "^4.0.0",
-		"autoprefixer": "^10.4.14",
-		"eslint": "^8.38.0",
-		"eslint-plugin-jsx-a11y": "^6.7.1",
-		"eslint-plugin-react": "^7.32.2",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"postcss-import": "^15.1.0",
-		"postcss-nesting": "^11.3.0",
-		"tailwindcss": "^3.3.2",
-		"vite": "^7.0.5"
+		"@infinum/eslint-plugin": "^3.0.1",
+		"@types/react": "^18.3.23",
+		"@types/react-dom": "^18.3.7",
+		"@typescript-eslint/utils": "^5.62.0",
+		"@vitejs/plugin-react": "^4.7.0",
+		"autoprefixer": "^10.4.21",
+		"eslint": "^8.57.1",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"postcss-import": "^16.1.1",
+		"postcss-nesting": "^13.0.2",
+		"tailwindcss": "^3.4.17",
+		"vite": "^7.0.6"
 	},
 	"peerDependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
 	},
 	"files": [
 		"dist"
